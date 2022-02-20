@@ -1,0 +1,47 @@
+@import "../../styles/variables/colors";
+.navSection {
+    .navbar {
+        background-color: $theme-primary;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        padding: 0 70px;
+        .lists {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 150px;
+            li {
+                list-style: none;
+                a {
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: $white;
+                }
+                &.active::after {
+                    content: "";
+                    height: 3px;
+                    bottom: -23px;
+                    left: 17px;
+                    background-color: $theme-secondary;
+                    width: 110px;
+                    position: absolute;
+                }
+            }
+        }
+        .contact-btn {
+            a {
+                padding: 10px 30px;
+                border: none;
+                border-radius: 5px;
+                border: 1px solid #707070;
+                color: $white;
+                font-size: 15px;
+                background: transparent;
+                text-decoration: none;
+            }
+        }
+    }
+}

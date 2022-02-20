@@ -1,0 +1,72 @@
+@import "../../../styles/variables/colors";
+.bio {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+    .studio {
+        .title2 {
+            color: $theme-secondary;
+            font-weight: 100;
+        }
+        .title1 {
+            font-size: 72px;
+            max-width: 480px;
+            color: $white;
+            margin: 0;
+        }
+        .description {
+            font-size: 17px;
+            color: $gray-a;
+            max-width: 66%;
+            line-height: 40px;
+        }
+        .btns {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            li {
+                list-style: none;
+                font-size: 16px;
+                cursor: pointer;
+                &:nth-child(1) {
+                    background-color: $theme-secondary;
+                    border-radius: 5px;
+                    padding: 15px 30px;
+                }
+                &:nth-child(2):hover {
+                    color: red;
+                }
+                a {
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+        }
+        .avatar-info {
+            display: flex;
+            margin-top: 25px;
+            gap: 20px;
+            .info {
+                .description {
+                    min-width: 100%;
+                    font-size: 20px;
+                    font-weight: 100;
+                    margin: 0;
+                }
+                .title4 {
+                    margin: 0;
+                    font-weight: 100;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .thumbs {
+        width: 33%;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

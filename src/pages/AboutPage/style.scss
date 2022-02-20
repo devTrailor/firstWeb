@@ -1,0 +1,15 @@
+@import '../../styles/variables/colors';
+.about-page {
+    .card-container {
+        height: 500px;
+        background-color: $theme-light-yellow;
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 0 55px;
+            padding: 45px 0;
+            border-bottom: 2px solid #F3D1BF;
+        }
+    }
+}
