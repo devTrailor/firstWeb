@@ -102,3 +102,9 @@ body {
     line-height: 1.5;
     color: $gray-4;
 }
+
+// Max width 1400
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}

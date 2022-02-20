@@ -1,6 +1,5 @@
 import React from "react";
-import Navbar from "../Navbar/Navbar";
-import BioData from "./bioSection/BioData";
+import Navbar from "./Navbar/Navbar";
 
 // Styles
 import "./style.scss";
@@ -8,11 +7,8 @@ import "./style.scss";
 const Header = () => {
   return (
     <div className="header">
-
-    {/* Navbar */}
-      <Navbar />
-      {/* Bio data */}
-      <BioData />
+      {/* Navbar */}
+      <Navbar/>
     </div>
   );
 };

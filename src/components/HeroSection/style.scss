@@ -1,9 +1,17 @@
-@import "../../../styles/variables/colors";
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
 .bio {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    padding: 50px 0;
     width: 100%;
+    background-color: $theme-primary;
+    gap: 25px;
+    @include mobile {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        padding-left: 25px;
+    }
     .studio {
         .title2 {
             color: $theme-secondary;
@@ -46,6 +54,7 @@
         .avatar-info {
             display: flex;
             margin-top: 25px;
+            align-items: center;
             gap: 20px;
             .info {
                 .description {
@@ -64,6 +73,9 @@
     }
     .thumbs {
         width: 33%;
+        @include mobile {
+            width: 90%;
+        }
         img {
             width: 100%;
             object-fit: cover;

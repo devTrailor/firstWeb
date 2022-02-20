@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
-import Logo from "../../assets/logos/logo.png";
+import Logo from "../../../assets/logos/logo.png";
 
 //Styles
 
@@ -19,23 +19,31 @@ const Navbar = () => {
         </div>
         {/* Lists */}
         <ul className="lists">
-          <li className="active">
-            <Link to="/">About</Link>
+          <li>
+            <NavLink to="/" activeClassName="active">
+              About
+            </NavLink>
           </li>
           <li>
-            <Link to="/services">Services</Link>
+            <NavLink to="/services" activeClassName="active">
+              Services
+            </NavLink>
           </li>
 
           <li>
-            <Link to="/pricing">Pricing</Link>
+            <NavLink to="/pricing" activeClassName="active">
+              Pricing
+            </NavLink>
           </li>
           <li>
-            <Link to="/blogs">Blog</Link>
+            <NavLink to="/blogs" activeClassName="active">
+              Blog
+            </NavLink>
           </li>
         </ul>
         {/* For Contact */}
         <div className="contact-btn">
-          <Link to= '#'>Contact</Link>
+          <NavLink to="/contact">Contact</NavLink>
         </div>
       </nav>
     </div>

@@ -1,4 +1,4 @@
-@import "../../styles/variables/colors";
+@import "../../../styles/variables/colors";
 .navSection {
     .navbar {
         background-color: $theme-primary;
@@ -20,15 +20,6 @@
                     text-decoration: none;
                     color: $white;
                 }
-                &.active::after {
-                    content: "";
-                    height: 3px;
-                    bottom: -23px;
-                    left: 17px;
-                    background-color: $theme-secondary;
-                    width: 110px;
-                    position: absolute;
-                }
             }
         }
         .contact-btn {
@@ -41,6 +32,18 @@
                 font-size: 15px;
                 background: transparent;
                 text-decoration: none;
+            }
+        }
+        .active {
+            position: relative;
+            &::before {
+                content: "";
+                height: 3px;
+                bottom: -10px;
+                left: 0;
+                background-color: $theme-secondary;
+                width: 100%;
+                position: absolute;
             }
         }
     }

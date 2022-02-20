@@ -1,7 +1,8 @@
-@import '../../styles/variables/colors';
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
 .about-page {
     .card-container {
-        height: 500px;
+        // height: 500px;
         background-color: $theme-light-yellow;
         .cards {
             display: flex;
@@ -9,7 +10,63 @@
             flex-wrap: wrap;
             margin: 0 55px;
             padding: 45px 0;
-            border-bottom: 2px solid #F3D1BF;
+            border-bottom: 2px solid #f3d1bf;
+        }
+    }
+    .about-hero-section {
+        background-color: $theme-light-yellow;
+        .bio {
+            background-color: $theme-light-yellow;
+            justify-content: center;
+            flex-direction: row-reverse;
+            gap: 150px;
+            padding: 90px 0;
+            .thumbs {
+                width: 70%;
+            }
+            .studio {
+                .title2 {
+                    margin: 0;
+                }
+                .title1 {
+                    color: $theme-primary-dark;
+                }
+                .description {
+                    color: $shadowColor;
+                    max-width: 70%;
+                }
+                .btns {
+                    li {
+                        box-shadow: $primaryshadow;
+                        background-color: $white;
+                        a {
+                            color: $shadowColor !important;
+                        }
+                    }
+                }
+            }
+        }
+        .hero-cards {
+            .container {
+                display: flex;
+                justify-content: center;
+                gap: 135px;
+                .card {
+                    padding: 30px 0 30px 30px;
+                    font-size: 40px;
+                    min-width: 391px;
+                    border: 1px solid #f3d1bf;
+                    .title1 {
+                        font-weight: 100;
+                        color: #391400;
+                    }
+                    .description {
+                        font-size: 20px;
+                        font-weight: 300;
+                        color: #391400;
+                    }
+                }
+            }
         }
     }
 }
