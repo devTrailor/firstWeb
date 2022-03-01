@@ -35,7 +35,7 @@ const ServicesInfo = () => {
     <>
       <div className="container service-info ">
         <h5 className="title2">Service</h5>
-        <p className="description">How Our Agency Can Help</p>
+        <p className="para">How Our Agency Can Help</p>
         <div className="card-container">
           {Data.map((elm, id) => {
             return (
