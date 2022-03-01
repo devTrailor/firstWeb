@@ -1,0 +1,57 @@
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
+.how-work {
+    display: flex;
+    // justify-content: ;
+    gap: 150px;
+    border-bottom: 1px solid #f3d1bf;
+    padding: 90px 0;
+    .projects {
+        max-width: 500px;
+        .title2 {
+            font-size: 16px;
+            font-weight: 100;
+            color: $theme-secondary;
+            margin-bottom: 30px;
+        }
+        .title1 {
+            font-size: 72px;
+            font-weight: 400;
+            color: #391400;
+        }
+        .description {
+            font-size: 16px;
+            font-weight: 100;
+            margin-bottom: 50px;
+        }
+        .btn {
+            display: inline;
+            a {
+                text-decoration: none;
+                color: $white;
+                font-size: 16px;
+                box-shadow: $shadowSecondary;
+                background-color: $theme-secondary;
+                padding: 15px 25px;
+                border-radius: 5px;
+            }
+        }
+    }
+    .project-info {
+        .project-list {
+            font-size: 20px;
+            .list {
+                display: flex;
+                align-items: center;
+                gap: 70px;
+                .title2 {
+                    font-size: 72px;
+                }
+                .description {
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

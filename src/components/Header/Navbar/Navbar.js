@@ -1,10 +1,11 @@
-import React from "react";
 import { Link, NavLink } from "react-router-dom";
+// import React, { useState } from "react";
+// import { Modal, Button } from "antd";
 
 import Logo from "../../../assets/logos/logo.png";
 
 //Styles
-
+import "antd/dist/antd.css";
 import "./style.scss";
 
 const Navbar = () => {
@@ -43,7 +44,7 @@ const Navbar = () => {
         </ul>
         {/* For Contact */}
         <div className="contact-btn">
-          <NavLink to="/contact">Contact</NavLink>
+          <Link to="/contact-us">Contact Us</Link>
         </div>
       </nav>
     </div>

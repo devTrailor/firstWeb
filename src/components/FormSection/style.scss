@@ -1,0 +1,70 @@
+@import "../../styles/variables/colors";
+.contact_form {
+    background-color: $theme-primary;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .form-data {
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        width: 600px;
+        .form {
+            .title2 {
+                font-size: 50px;
+                color: $theme-secondary;
+                margin: 0;
+            }
+            .description {
+                color: rgb(139, 139, 139);
+            }
+            .user-info {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 30px;
+                color: $white !important;
+                input {
+                    border: none;
+                    background-color: #4F5C88;
+                    border-radius: 10px;
+                    width: 100%;
+                    outline: none;
+                    padding: 10px 20px;
+                    font-size: 12px;
+                }
+                 ::placeholder {
+                    color: white;
+                }
+            }
+            .msg {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin-top: 30px;
+                textarea {
+                    background-color: #4F5C88;
+                    border: none;
+                    outline: none;
+                    color: $white;
+                    border-radius: 10px;
+                    padding: 10px;
+                    &::placeholder {
+                        color: $white;
+                    }
+                }
+            }
+            .btn {
+                background-color: $theme-secondary;
+                border: none;
+                outline: none;
+                padding: 10px 20px;
+                margin-top: 20px;
+                border-radius: 5px;
+                color: $white;
+                cursor: pointer;
+            }
+        }
+    }
+}

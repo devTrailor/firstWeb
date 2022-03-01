@@ -1,15 +1,17 @@
-import React from 'react'
-import AppRouter from './AppRouter'
+import React from "react";
+import AppRouter from "./AppRouter";
 
 // Styles
+import "antd/dist/antd.css";
 
-import "./styles/App.scss"
-
+import "./styles/App.scss";
 
 const App = () => {
-    return (
-        <div className='main-app-container'><AppRouter /></div>
-    )
-}
+  return (
+    <div className="main-app-container">
+      <AppRouter />
+    </div>
+  );
+};
 
-export default App
+export default App;

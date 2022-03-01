@@ -1,0 +1,55 @@
+@import "../../styles/variables/colors";
+.features {
+    display: flex;
+    padding: 90px 0;
+    gap: 150px;
+    .business-features {
+        .title2 {
+            font-size: 16px;
+            font-weight: 100;
+            color: $theme-secondary;
+        }
+        .title1 {
+            font-size: 72px;
+            font-weight: 400;
+            max-width: 560px;
+            color: #391400;
+        }
+        .description {
+            font-size: 16px;
+            font-weight: 100;
+            margin-bottom: 50px;
+            max-width: 390px;
+        }
+        .feature-lists {
+            .list {
+                display: flex;
+                list-style: none;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 15px;
+                .icon {
+                    color: $theme-secondary;
+                    font-size: 30px;
+                }
+                li {
+                    font-size: 16px;
+                    color: $gray-1;
+                }
+            }
+        }
+    }
+    .thumb {
+        width: 550px;
+        height: 550px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// featureData
+.featureData {
+    padding: 60px 0;
+    // border-bottom: 1px solid #f3d1bf;
+}

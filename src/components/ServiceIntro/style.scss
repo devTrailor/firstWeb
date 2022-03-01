@@ -1,0 +1,66 @@
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
+.service-intro {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+    gap: 220px;
+    .thumb {
+        width: 90%;
+        img {
+            width: 100%;
+        }
+    }
+    .service-help {
+        // background-color: red;
+        width: 100%;
+        .title2 {
+            font-size: 16px;
+            font-weight: 100;
+            color: $theme-secondary;
+        }
+        .title1 {
+            font-size: 56px;
+            color: #391400;
+            max-width: 90%;
+            font-weight: 500;
+        }
+        .description {
+            max-width: 500px;
+            font-size: 20px;
+            font-weight: 100;
+        }
+        .serice-user-info {
+            display: flex;
+            // align-items: center;
+            gap: 30px;
+            .thumb {
+                width: 10%;
+                img {
+                    width: 100%;
+                }
+            }
+            .info {
+                .description {
+                    margin: 0;
+                    color: #391400;
+                    font-size: 14px;
+                }
+                .title5 {
+                    font-weight: 100;
+                    color: #391400;
+                }
+                .btn {
+                    margin-top: 50px;
+                    a {
+                        box-shadow: $shadowSecondary;
+                        color: #391400;
+                        padding: 15px 25px;
+                        border-radius: 5px;
+                        background-color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
