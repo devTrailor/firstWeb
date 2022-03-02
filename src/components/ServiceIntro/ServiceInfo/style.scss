@@ -11,17 +11,23 @@
         max-width: 300px;
         font-size: 40px;
         color: #391400;
+        font-weight: 500;
     }
     .card-container {
         display: flex;
         // padding: 90px 0;
         justify-content: center;
         border-bottom: 1px solid #f3d1bf;
+        padding-bottom: 50px;
         .card {
             border: 1px solid #f3d1bf;
             max-width: 391px;
-            padding: 80px 20px 100px 50px;
+            padding: 80px 20px 50px 50px;
             .card-body {
+                .icon {
+                    color: $theme-secondary;
+                    font-size: 60px;
+                }
                 .title3 {
                     margin-top: 20px;
                     color: #391400;

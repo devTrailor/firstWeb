@@ -12,6 +12,7 @@ import HowWork from "../../components/howWork/HowWork";
 import Features from "../../components/Features/Features";
 import ServiceIntro from "../../components/ServiceIntro/ServiceIntro";
 import ServicesInfo from "../../components/ServiceIntro/ServiceInfo/ServicesInfo";
+import PortfoiloIntro from "../../components/PortfolioIntro/PortfoiloIntro";
 
 const About = () => {
   return (
@@ -87,6 +88,11 @@ const About = () => {
       {/* Service-info */}
       <div className="service-data">
         <ServicesInfo />
+      </div>
+      
+      {/* Porfolio-intro */}
+      <div className="portfolio-intro-section">
+        <PortfoiloIntro />
       </div>
     </div>
   );

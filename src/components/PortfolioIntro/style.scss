@@ -1,0 +1,62 @@
+@import "../../styles/variables/colors";
+.portfolio-intro {
+    padding: 90px 0;
+    .title2 {
+        text-align: center;
+        font-weight: 100;
+        color: $theme-secondary;
+    }
+    .title1 {
+        text-align: center;
+        font-size: 52px;
+        color: $white;
+    }
+    .work-lists {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 100px;
+        li {
+            font-size: 16px;
+        }
+    }
+    .ant-tabs {
+        .ant-tabs-tab {
+            font-size: 16px;
+            font-weight: 100;
+            color: gray;
+            &:hover {
+                color: $white;
+            }
+        }
+        .ant-tabs-ink-bar {
+            height: 2px;
+            background-color: $theme-secondary;
+        }
+        .ant-tabs-tab-active {
+            .ant-tabs-tab-btn {
+                color: $white;
+            }
+        }
+        .ant-tabs-tab-btn:focus,
+        .ant-tabs-tab-remove:focus,
+        .ant-tabs-tab-btn:active,
+        .ant-tabs-tab-remove:active {
+            color: $white;
+        }
+        .ant-tabs-nav-wrap {
+            justify-content: center;
+        }
+        .ant-tabs-nav-list {
+            gap: 30px;
+        }
+        .ant-tabs-nav {
+            &::before {
+                border-bottom: none;
+            }
+        }
+        .ant-tabs-content-holder {
+            background-color: aliceblue;
+        }
+    }
+}

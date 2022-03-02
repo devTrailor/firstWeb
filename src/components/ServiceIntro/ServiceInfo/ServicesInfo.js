@@ -42,7 +42,7 @@ const ServicesInfo = () => {
               <>
                 <div className="card" key={id}>
                   <div className="card-body">
-                    <img src={elm.icon} alt="Loading..." />
+                    <div className="icon">{elm.icon}</div>
                     <h2 className="title3">{elm.title}</h2>
                     <p className="description">{elm.description}</p>
                     <Link to="/">{elm.more}</Link>
