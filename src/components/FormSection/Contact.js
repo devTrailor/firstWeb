@@ -1,91 +1,135 @@
-import React from "react";
-import { Formik, Form } from "formik";
+import React, { useState,useEffect } from "react";
 // Styles
 import "./style.scss";
 
 const Contact = () => {
-  // Prevent default behaviour of form
-  const preventDefault = (e) => {
-    e.preventDefault();
+  // Values
+  const initialValues = {
+    firstName: "",
+    lastName: "",
+    email: "",
+    mobile: "",
+    msg: "",
   };
+  // State for input Values
+  const [formValues, setFormValues] = useState(initialValues);
+  const [error, setError] = useState();
+  const [isSubmit, setIsSubmit] = useState(false);
+
+  // Editable inputs
+  const handleInputValues = (e) => {
+    console.log(e.target.value);
+    const { name, value } = e.target;
+    setFormValues({
+      ...formValues,
+      [name]: value,
+    });
+    console.log(formValues);
+  };
+  // Form Submit refresh break
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setError(validate(formValues));
+    setIsSubmit(true)
+  };
+
+
+  // useEffect(()=>{
+  //   console.log(error);
+
+  //   if (Object.keys(error).length === 0 && isSubmit) {
+  //     console.log(formValues);
+      
+  //   }
+
+
+
+  // },[error])
+
+  // Validate values in form
+  const validate = (values) => {
+    const errors = {};
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!values.firstName) {
+      errors.firstName = "**First Name is required**";
+    }
+    if (!values.lastName) {
+      errors.lastName = "**Last Name is required**";
+    }
+    if (!values.email) {
+      errors.email = "**Email is required**";
+    }
+    if (!values.mobile) {
+      errors.mobile = "**Mobile required**";
+    }
+    if (!values.msg) {
+      errors.msg = "**Msg is required**";
+    }
+    return errors;
+  };
+
   return (
     <div className="contact_form">
-      <Formik
-        initialValues={{
-          firstName: "",
-          lastName: "",
-          email: "",
-          mobile: "",
-          msg: "",
-        }}
-        validate={(values) => {
-          const errors = {};
-          if (!values.email) {
-            errors.email = "Required";
-          } else if (
-            !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-          ) {
-            errors.email = "Invalid email address";
-          }
-          return errors;
-        }}
-        onSubmit={(values, { setSubmitting }) => {
-          setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
-            setSubmitting(false);
-          }, 400);
-        }}
-      >
-        {({
-          values,
-          errors,
-          touched,
-          handleChange,
-          handleBlur,
-          handleSubmit,
-          isSubmitting,
-          /* and other goodies */
-        }) => (
-          <form onSubmit={handleSubmit}>
-
+      <form onSubmit={handleSubmit}>
+        <h1 className="title1">Get In Touch</h1>
+        <div className="fullName">
+          <label>
+            First Name:
             <input
-              type="email"
+              type="text"
+              placeholder="First Name"
               name="firstName"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.firstName}
+              value={formValues.firstName}
+              onChange={handleInputValues}
             />
-            {errors.firstName && touched.firstName && errors.firstName}
+          </label>
+          <label>
+            Last Name:
             <input
-              type="email"
+              type="text"
               name="lastName"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.lastName}
+              placeholder="Last Name"
+              value={formValues.lastName}
+              onChange={handleInputValues}
             />
-            {errors.lastName && touched.lastName && errors.lastName}
+          </label>
+          <label>
+            Email:
             <input
-              type="email"
+              type="text"
               name="email"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.email}
+              placeholder="Email"
+              value={formValues.email}
+              onChange={handleInputValues}
             />
-            {errors.email && touched.email && errors.email}
+          </label>
+          <label>
+            Mobile:
             <input
-              type="number"
-              name="number"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.number}
+              type="text"
+              name="mobile"
+              placeholder="Mobile"
+              value={formValues.mobile}
+              onChange={handleInputValues}
             />
-            {errors.mobile && touched.mobile && errors.mobile}
-            <button type="submit" disabled={isSubmitting}>
-              Submit
-            </button>
-          </form>
-        )}
-      </Formik>
+          </label>
+          <div className="msg">
+            <textarea
+              name="msg"
+              style={{ width: "100%" }}
+              id="msg"
+              cols="50"
+              value={formValues.msg}
+              onChange={handleInputValues}
+              placeholder="Submit your message..."
+              rows="10"
+            ></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
     </div>
   );
 };

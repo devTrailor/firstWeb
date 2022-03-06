@@ -5,8 +5,11 @@
     justify-content: space-between;
     padding: 60px 0;
     gap: 220px;
+    @include mobile {
+        flex-wrap: wrap;
+    }
     .thumb {
-        width: 90%;
+        width: 75%;
         img {
             width: 100%;
         }

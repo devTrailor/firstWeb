@@ -2,7 +2,7 @@ import React from "react";
 import AppRouter from "./AppRouter";
 
 // Styles
-import "antd/dist/antd.css";
+import 'antd/dist/antd.min.css';
 
 import "./styles/App.scss";
 

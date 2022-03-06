@@ -56,7 +56,35 @@
             }
         }
         .ant-tabs-content-holder {
-            background-color: aliceblue;
+            background-color: $theme-primary;
+        }
+    }
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        background-color: transparent;
+        padding: 20px 0;
+        .card {
+            overflow: hidden;
+            cursor: pointer;
+            max-width: 30%;
+            border-radius: 10px;
+            &:hover {
+                transform: scale(1.05);
+                transition: all .3s;
+                box-shadow: 0 5px 32px rgba($gray-1, 0.4);
+            }
+            .card-body {
+                img {
+                    border-radius: 10px;
+                    width: 100%;
+                }
+                .title {
+                    margin: 0;
+                }
+            }
         }
     }
 }
