@@ -1,0 +1,62 @@
+@import "../../../styles/variables/colors";
+.future-card {
+    max-width: 370px;
+    background-color: $theme-primary;
+    border: 1px solid #3a3c56;
+    .card-data {
+        padding: 40px;
+        .top {
+            border-bottom: 1px solid #3a3c56;
+            .topData {
+                display: flex;
+                gap: 25px;
+                justify-content: flex-start;
+                .title1 {
+                    margin: 0;
+                    font-size: 72px;
+                }
+                .month_year {
+                    .title {
+                        color: $white;
+                        font-size: 24px;
+                        font-weight: 100;
+                        margin: 0;
+                    }
+                }
+            }
+            .time {
+                color: White;
+                position: relative;
+                left: 20px;
+                margin: 0 0 20px 0;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 50%;
+                    left: -20px;
+                    background-color: $theme-secondary;
+                    top: 2px;
+                }
+            }
+        }
+        .bottom {
+            .title1 {
+                font-size: 25px;
+                text-align: left;
+                margin-top: 30px;
+                font-weight: 100;
+            }
+            .description {
+                color: #707070;
+                font-size: 16px;
+                font-weight: 100;
+            }
+            .title {
+                font-weight: 100;
+                color: $white;
+            }
+        }
+    }
+}

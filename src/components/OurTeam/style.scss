@@ -1,0 +1,28 @@
+@import "../../styles/variables/colors";
+.card-swiper {
+    background-color: $theme-primary;
+    .title2 {
+        text-align: center;
+        color: $theme-secondary;
+        font-weight: 100;
+    }
+    .title {
+        text-align: center;
+        font-size: 32px;
+        color: $white;
+    }
+    .card-slider {
+        padding: 90px 0;
+        .swiper {
+            .swiper-wrapper {
+                .swiper-slide {
+                    max-width: 375px;
+                    border: 1px solid;
+                }
+            }
+        }
+    }
+    .swiper-pagination-bullet {
+        background-color: $theme-secondary;
+    }
+}

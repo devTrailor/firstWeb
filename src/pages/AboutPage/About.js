@@ -7,12 +7,15 @@ import Thumb from "../../assets/imags/pic1.png";
 // Styles
 
 import "./style.scss";
+
 import HeroCard from "../../components/HeroSection/HeroCard/HeroCard";
 import HowWork from "../../components/howWork/HowWork";
 import Features from "../../components/Features/Features";
 import ServiceIntro from "../../components/ServiceIntro/ServiceIntro";
 import ServicesInfo from "../../components/ServiceIntro/ServiceInfo/ServicesInfo";
 import PortfoiloIntro from "../../components/PortfolioIntro/PortfoiloIntro";
+import FutureEvents from "../../components/FutureEvents/FutureEvents";
+import OurTeam from "../../components/OurTeam/OurTeam";
 
 const About = () => {
   return (
@@ -89,10 +92,19 @@ const About = () => {
       <div className="service-data">
         <ServicesInfo />
       </div>
-      
+
       {/* Porfolio-intro */}
       <div className="portfolio-intro-section">
         <PortfoiloIntro />
+      </div>
+
+      {/* Future Events */}
+      <div className="future-events-section">
+        <FutureEvents />
+      </div>
+      {/* Our_team */}
+      <div className="our-team-section">
+        <OurTeam />
       </div>
     </div>
   );
