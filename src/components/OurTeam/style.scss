@@ -1,6 +1,7 @@
 @import "../../styles/variables/colors";
 .card-swiper {
     background-color: $theme-primary;
+    position: relative;
     .title2 {
         text-align: center;
         color: $theme-secondary;
@@ -13,16 +14,25 @@
     }
     .card-slider {
         padding: 90px 0;
-        .swiper {
-            .swiper-wrapper {
-                .swiper-slide {
-                    max-width: 375px;
-                    border: 1px solid;
-                }
+        overflow: hidden;
+        position: relative;
+        .flickity-button {}
+        .flickity-page-dots {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            .dot {
+                background-color: transparent;
+                width: 12px;
+                height: 12px;
+                opacity: 1;
+                border-radius: 50px;
+                border: 1px solid gray;
+                cursor: pointer;
+            }
+            .is-selected {
+                background-color: $theme-secondary;
             }
         }
-    }
-    .swiper-pagination-bullet {
-        background-color: $theme-secondary;
     }
 }

@@ -1,15 +1,8 @@
 import React from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-// import required modules
-import { FreeMode, Pagination } from "swiper";
+import Flickity from "react-flickity-component";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
 // Styles
-import "./style.scss"
+import "./style.scss";
 
 const OurTeam = () => {
   const sliderData = [
@@ -74,38 +67,44 @@ const OurTeam = () => {
       description: "Designer",
     },
   ];
+
+  const flickityOptions = {
+    initialIndex: 1,
+    groupCells: 4,
+    wrapAround: true,
+    draggable: true,
+    cellAlign: "center",
+    pageDots: true,
+    prevNextButtons: true,
+    prevNextButtons: true,
+    autoPlay: false
+  };
+
   return (
     <div className="container card-swiper ">
       <h5 className="title2">OUR TEAM</h5>
       <h2 className="title">Team of Designers and Developers</h2>
       <div className="card-slider container">
-        <Swiper
-          slidesPerView={3}
-          spaceBetween={20}
-          freeMode={true}
-          loop = {true}
-          pagination={{
-            clickable: true,
-          slidesPerView :4
-          }}
-          modules={[FreeMode, Pagination]}
-          className="mySwiper"
+        <Flickity
+          className={"carousel"} // default ''
+          elementType={"div"} // default 'div'
+          options={flickityOptions} // takes flickity options {}
+          disableImagesLoaded={false} // default false
+          reloadOnUpdate // default false
+          static // default false
         >
           {sliderData.map((items) => {
             return (
               <>
-                <SwiperSlide>
-                  <div className="card">
-                    <img src={items.img_url} alt="Loading..." />
-                    <h3 className="title">{items.title}</h3>
-                    <p className="description">{items.description}</p>
-                  </div>
-                </SwiperSlide>
-                ;
+                <div className="card">
+                  <img src={items.img_url} alt="Loading..." />
+                  <h3 className="title">{items.title}</h3>
+                  <p className="description">{items.description}</p>
+                </div>
               </>
             );
           })}
-        </Swiper>
+        </Flickity>
       </div>
     </div>
   );
