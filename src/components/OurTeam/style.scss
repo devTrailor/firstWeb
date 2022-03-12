@@ -16,7 +16,11 @@
         padding: 90px 0;
         overflow: hidden;
         position: relative;
-        .flickity-button {}
+        .flickity-button {
+            // position: absolute;
+            // top: 0;
+            // // right: 50px;
+        }
         .flickity-page-dots {
             display: flex;
             gap: 25px;

@@ -28,10 +28,30 @@
     .cards {
         display: flex;
         gap: 40px;
+        width: 100%;
+        justify-content: flex-end;
         .card {
-            max-width: 330px;
             padding: 40px;
             border: 1px solid #f3d1bf;
+            position: relative;
+            cursor: pointer;
+            &::before {
+                content: "";
+                position: absolute;
+                background: $theme-secondary;
+                width: 20px;
+                height: 20px;
+                opacity: 0;
+            }
+            &:hover {
+                background-color: $white;
+                padding-top: 125px;
+                transition: all .5s;
+                &::before {
+                    opacity: 1;
+                    top: 20px;
+                }
+            }
             .title2 {
                 font-size: 24px;
                 color: $text-dark;

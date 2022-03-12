@@ -1,0 +1,40 @@
+@import "../../styles/variables/colors";
+.card {
+    cursor: pointer;
+    &:hover {
+        background-color: $white;
+        transition: all .5s;
+    }
+    .card-body {
+        padding: 25px;
+        .stars {
+            max-width: 20%;
+            img {
+                width: 100%;
+            }
+        }
+        .description {
+            font-size: 16px;
+            text-align: left;
+            font-weight: 100;
+            margin-top: 20px;
+        }
+    }
+    .user-tag {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        img {
+            max-width: 56px;
+        }
+    }
+    .user-info {
+        .title {
+            margin: 0;
+            font-size: 24px;
+        }
+        .description {
+            margin: 0;
+        }
+    }
+}

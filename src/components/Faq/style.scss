@@ -1,0 +1,66 @@
+@import "../../styles/variables/colors";
+.___faqs {
+    padding: 90px 0;
+    .title4 {
+        text-align: left;
+        font-size: 16px;
+        font-weight: 100;
+        color: $theme-secondary;
+    }
+    .faq_box {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 145px;
+        .faq_info {
+            .title2 {
+                max-width: 316px;
+                color: #391400;
+            }
+            .description {
+                max-width: 470px;
+                font-weight: 100;
+                line-height: 2;
+            }
+            .ant-btn {
+                background-color: transparent;
+                border: none;
+                &:hover {
+                    color: $white;
+                    box-shadow: 0 5px 32px rgba(0, 0, 0, 0.4);
+                }
+            }
+        }
+        .accordion {
+            min-width: 570px;
+            .ant-collapse {
+                .ant-collapse-item {
+                    border: 1px solid #F3D1BF;
+                    background-color: #FDF0E9;
+                }
+                .ant-collapse-item-active {
+                    background-color: white;
+                }
+                .ant-collapse-header {
+                    padding: 35px 16px;
+                    flex-direction: row-reverse;
+                    justify-content: space-between;
+                    color: #391400;
+                    font-size: 20px;
+                    .anticon {
+                        background-color: $theme-secondary;
+                        color: white;
+                        padding: 7px;
+                        border-radius: 50px;
+                    }
+                }
+                .ant-collapse-content-box {
+                    max-width: 470px;
+                }
+                .description {
+                    color: #391400;
+                }
+            }
+        }
+    }
+}

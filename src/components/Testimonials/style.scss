@@ -1,0 +1,32 @@
+@import "../../styles/variables/colors";
+.testimonial-header {
+    padding: 90px 0;
+    .title4 {
+        text-align: center;
+        font-weight: 100;
+        font-size: 16px;
+        color: $theme-secondary;
+    }
+    .description {
+        text-align: center;
+        margin: 20px auto;
+        color: #391400;
+        font-weight: 100;
+        font-size: 56px;
+    }
+    .testimonial_cards {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .ant-row {
+            justify-content: center;
+            width: 100%;
+            .ant-col {
+                border: 1px solid #F3D1BF;
+                .card {
+                    max-width: 586px;
+                }
+            }
+        }
+    }
+}
