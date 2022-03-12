@@ -1,0 +1,20 @@
+@import "../../styles/variables/colors";
+.our_blogs {
+    padding: 90px 0;
+    border-bottom: 1px solid #F3D1BF;
+    .title2 {
+        color: $theme-secondary;
+        font-size: 16px;
+        font-weight: 100;
+    }
+    .description {
+        font-size: 52px;
+        font-weight: 500;
+        color: #391400;
+    }
+    .blog_cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

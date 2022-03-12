@@ -21,6 +21,8 @@ import OurTeam from "../../components/OurTeam/OurTeam";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import { Faq } from "../../components/Faq/Faq";
 import OurAwards from "../../components/OurAwards/OurAwards";
+import OurBlogs from "../../components/OurBlogs/OurBlogs";
+import Newsletter from "../../components/NewLetter/Newsletter";
 
 function About() {
   return (
@@ -119,6 +121,14 @@ function About() {
       {/* Our_Award_Section */}
       <div className="our-award-section">
         <OurAwards />
+      </div>
+      {/* Our_Blog_page */}
+      <div className="our-blog-section">
+        <OurBlogs />
+      </div>
+      {/* New_letter */}
+      <div className="news-letter-section">
+        <Newsletter />
       </div>
     </div>
   );

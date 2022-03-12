@@ -1,0 +1,27 @@
+.news_letter {
+    padding: 90px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .title1 {}
+    .form {
+        form {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            .ant-input {
+                width: 370px;
+                padding: 8px 10px;
+                border: 1px solid #f3d1bf;
+                outline: none;
+                border-radius: 5px;
+                &:focus {
+                    border: none;
+                }
+                &:hover {
+                    border: 1px solid #f3d1bf;
+                }
+            }
+        }
+    }
+}
