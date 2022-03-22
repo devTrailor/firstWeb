@@ -1,0 +1,48 @@
+@import "../../styles/variables/colors";
+.user-info {
+    position: relative;
+    .map {
+        iframe {
+            min-height: 720px;
+            width: 100%;
+        }
+    }
+    .connect_form {
+        border-radius: 5px;
+        width: 470px;
+        position: absolute;
+        top: 20%;
+        left: 6%;
+        background-color: $white;
+        padding: 30px;
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .ant-input {
+                border-radius: 5px;
+                border: 1px solid #f3d1bf;
+                color: #391400;
+                padding: 8px 10px;
+                &:focus {
+                    border: 1px solid #f3d1bf;
+                }
+            }
+            .ant-select {
+                border-radius: 5px;
+                padding: 8px 10px;
+                width: 100%;
+                border: 1px solid #f3d1bf;
+            }
+            .ant-btn {
+                background-color: $theme-secondary;
+                border-radius: 5px;
+                color: $white;
+                &:hover {
+                    color: $white;
+                    border: none;
+                }
+            }
+        }
+    }
+}

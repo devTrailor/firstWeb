@@ -3,7 +3,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .title1 {}
+    .title1 {
+        font-size: 50px;
+        font-weight: 500;
+    }
     .form {
         form {
             display: flex;
@@ -21,6 +24,12 @@
                 &:hover {
                     border: 1px solid #f3d1bf;
                 }
+            }
+            button {
+                border: 1px solid #f3d1bf;
+                padding: 8px 10px;
+                cursor: pointer;
+                background-color: transparent;
             }
         }
     }

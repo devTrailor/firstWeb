@@ -11,18 +11,34 @@
             margin: 0 55px;
             padding: 45px 0;
             border-bottom: 2px solid #f3d1bf;
+            @include mobile {
+                gap: 30px;
+                justify-content: center;
+            }
         }
     }
     .about-hero-section {
         background-color: $theme-light-yellow;
+        @include mobile {
+            padding: 20px;
+        }
         .bio {
             background-color: $theme-light-yellow;
             justify-content: center;
             flex-direction: row-reverse;
             gap: 150px;
             padding: 90px 0;
+            @include mobile {
+                flex-direction: column-reverse;
+            }
             .thumbs {
-                width: 70%;
+                max-width: 70%;
+                @include mobile {
+                    width: 70%;
+                }
+                img {
+                    width: 100%;
+                }
             }
             .studio {
                 .title2 {
@@ -34,8 +50,14 @@
                 .description {
                     color: $shadowColor;
                     max-width: 70%;
+                    @include mobile {
+                        max-width: 100%;
+                    }
                 }
                 .btns {
+                    @include mobile {
+                        justify-content: flex-start;
+                    }
                     li {
                         box-shadow: $primaryshadow;
                         background-color: $white;
@@ -50,7 +72,8 @@
             .container {
                 display: flex;
                 justify-content: center;
-                gap: 135px;
+                flex-wrap: wrap;
+                gap: 30px;
                 .card {
                     padding: 30px 0 30px 30px;
                     font-size: 40px;
@@ -72,50 +95,117 @@
     // How we work????????
     .how-work-section {
         background-color: $theme-light-yellow;
+        @include mobile {
+            padding: 20px;
+        }
     }
     // Feature-section
     .feature-section {
         background-color: $theme-light-yellow;
+        @include mobile {
+            padding: 20px;
+        }
     }
     /* Service-intro */
     .service-intro-section {
         background-color: $theme-light-yellow;
+        @include mobile {
+            padding: 20px;
+        }
     }
     /* Service-info */
     .service-data {
         background-color: $theme-light-yellow;
         padding-bottom: 125px;
+        @include mobile {
+            padding: 20px;
+        }
     }
     // Portfolio-intro
     .portfolio-intro-section {
         background-color: $theme-primary;
+        @include mobile {
+            padding: 20px;
+        }
     }
     // Future-Events
     .future-events-section {
         background-color: $theme-primary;
+        @include mobile {
+            padding: 20px;
+        }
     }
     // Our_team
     .our-team-section {
         background-color: $theme-primary;
+        @include mobile {
+            padding: 20px;
+        }
     }
     // .testimonial-section
     .testimonial-section {
         background-color: #fdf0e9;
+        @include mobile {
+            padding: 20px;
+        }
     }
     //     {/* FAQ_Section */}
     .faq-section {
         background-color: #fdf0e9;
+        @include mobile {
+            padding: 20px;
+        }
     }
     // Our_Award_Section
     .our-award-section {
         background-color: #fdf0e9;
+        @include mobile {
+            padding: 20px;
+        }
     }
     // our_blog_pages
     .our-blog-section {
         background-color: #fdf0e9;
+        @include mobile {
+            padding: 20px;
+        }
     }
     /* New_letter */
     .news-letter-section {
+        background-color: #fdf0e9;
+        @include mobile {
+            padding: 20px;
+        }
+    }
+    // User_map
+    .usre-map-section {
+        background-color: #fdf0e9;
+    }
+    // Usre_Cards
+    .user-card-section {
+        background-color: #fdf0e9;
+        @include mobile {
+            padding: 20px;
+        }
+        .user_cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 90px 0;
+            .card {
+                border: 1px solid #f3d1bf;
+                width: 391px;
+                .card-body {
+                    .icon {
+                        display: flex;
+                        gap: 20px;
+                    }
+                }
+            }
+        }
+    }
+    // Footer_section
+    .footer-section {
         background-color: #fdf0e9;
     }
 }

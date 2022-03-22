@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Tabs} from "antd";
+import { Tabs } from "antd";
 
 // Styles
 import "./style.scss";
+import { Link } from "react-router-dom";
 
 const PortfoiloIntro = () => {
   const { TabPane } = Tabs;
@@ -114,7 +115,7 @@ const PortfoiloIntro = () => {
           </div>
         </TabPane>
         <TabPane tab="Web" key="2">
-        <div className="container card-container">
+          <div className="container card-container">
             {projects[1].map((item) => {
               return (
                 <>
@@ -136,7 +137,7 @@ const PortfoiloIntro = () => {
           React-Js Works
         </TabPane>
       </Tabs>
-    </div>
+    </div >
   );
 };
 

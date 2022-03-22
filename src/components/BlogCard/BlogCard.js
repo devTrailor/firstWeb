@@ -1,6 +1,5 @@
 import React from 'react'
 // Styles
-import "./style.scss"
 
 const BlogCard = (props) => {
     return (

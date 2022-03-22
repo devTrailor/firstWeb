@@ -1,7 +1,7 @@
 @import "../../styles/variables/colors";
 .our_blogs {
     padding: 90px 0;
-    border-bottom: 1px solid #F3D1BF;
+    border-bottom: 1px solid #f3d1bf;
     .title2 {
         color: $theme-secondary;
         font-size: 16px;
@@ -16,5 +16,23 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        .card {
+            background-color: transparent;
+            cursor: pointer;
+            .card-body {
+                .blog_img {
+                    overflow: hidden;
+                    max-width: 370px;
+                    img {
+                        border-radius: 10px;
+                        width: 100%;
+                        transition: all 0.5s;
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+        }
     }
 }

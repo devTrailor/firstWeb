@@ -10,7 +10,7 @@
     @include mobile {
         flex-wrap: wrap;
         flex-direction: column-reverse;
-        padding-left: 25px;
+        padding: 25px;
     }
     .studio {
         .title2 {
@@ -22,17 +22,26 @@
             max-width: 480px;
             color: $white;
             margin: 0;
+            @include mobile {
+                font-size: 56px;
+            }
         }
         .description {
             font-size: 17px;
             color: $gray-a;
             max-width: 66%;
             line-height: 40px;
+            @include mobile {
+                max-width: 100%;
+            }
         }
         .btns {
             display: flex;
             align-items: center;
             gap: 30px;
+            @include mobile {
+                justify-content: space-around;
+            }
             li {
                 list-style: none;
                 font-size: 16px;
@@ -56,6 +65,15 @@
             margin-top: 25px;
             align-items: center;
             gap: 20px;
+            .avatar {
+                max-width: 22%;
+                @include mobile {
+                    width: 22%;
+                }
+                img {
+                    width: 100%;
+                }
+            }
             .info {
                 .description {
                     min-width: 100%;
@@ -72,9 +90,9 @@
         }
     }
     .thumbs {
-        width: 33%;
+        max-width: fit-content;
         @include mobile {
-            width: 90%;
+            width: 326px;
         }
         img {
             width: 100%;

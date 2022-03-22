@@ -13,7 +13,7 @@ const Newsletter = () => {
             <div className="form">
                 <form onSubmit={formHandler} >
                     <Input placeholder='Your email' />
-                    <Button type='submit'>SUBSCRIBE</Button>
+                    <button type='submit'>SUBSCRIBE</button>
                 </form>
             </div>
         </div>

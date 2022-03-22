@@ -1,8 +1,13 @@
 @import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
 .features {
     display: flex;
     padding: 90px 0;
     gap: 150px;
+    flex-wrap: wrap;
+    @include mobile {
+        gap: 20px;
+    }
     .business-features {
         .title2 {
             font-size: 16px;
@@ -41,7 +46,7 @@
     }
     .thumb {
         width: 550px;
-        height: 550px;
+        // height: 550px;
         img {
             width: 100%;
         }

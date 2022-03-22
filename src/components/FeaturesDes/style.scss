@@ -1,9 +1,11 @@
 @import '../../styles/variables/colors';
+@import '../../styles/variables/mixins';
 .feture-info {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #f3d1bf;
     padding-bottom: 50px;
+    flex-wrap: wrap;
     .feature {
         .title2 {
             font-size: 16px;
@@ -30,10 +32,15 @@
         gap: 40px;
         width: 100%;
         justify-content: flex-end;
+        flex-wrap: wrap;
+        @include mobile {
+            margin-top: 50px;
+        }
         .card {
             padding: 40px;
             border: 1px solid #f3d1bf;
             position: relative;
+            flex-wrap: wrap;
             cursor: pointer;
             &::before {
                 content: "";

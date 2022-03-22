@@ -1,4 +1,5 @@
 import React from "react";
+import { BsFillTelephoneFill } from "react-icons/bs";
 import Cards from "../../components/comcard/Cards";
 import Header from "../../components/Header/Header";
 import Hero from "../../components/HeroSection/Hero";
@@ -23,6 +24,9 @@ import { Faq } from "../../components/Faq/Faq";
 import OurAwards from "../../components/OurAwards/OurAwards";
 import OurBlogs from "../../components/OurBlogs/OurBlogs";
 import Newsletter from "../../components/NewLetter/Newsletter";
+import UserMap from "../../components/UserMap/UserMap";
+import UserConatctCard from "../../components/UserContactcard/UserConatctCard";
+import Footer from "../../components/Footer/Footer";
 
 function About() {
   return (
@@ -130,6 +134,28 @@ function About() {
       <div className="news-letter-section">
         <Newsletter />
       </div>
+      {/* User_map */}
+      <div className="usre-map-section">
+        <UserMap />
+      </div>
+      {/* UserCards */}
+      <div className="user-card-section">
+        <div className="user_cards container">
+          <UserConatctCard img_icon={<BsFillTelephoneFill />}
+            title="Phone" number="+1 (234) 567-89-00" />
+          <UserConatctCard img_icon={<BsFillTelephoneFill />}
+            title="Email" number="info@agency.com" />
+          <UserConatctCard img_icon={<BsFillTelephoneFill />}
+            title="Address" number="2247 Lunetta Street, TX 76301" />
+        </div>
+      </div>
+
+      {/* Footer_section */}
+
+      <div className="footer-section">
+        <Footer />
+      </div>
+
     </div>
   );
 }
