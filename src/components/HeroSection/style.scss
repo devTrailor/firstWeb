@@ -7,11 +7,11 @@
     width: 100%;
     background-color: $theme-primary;
     gap: 25px;
-    @include mobile {
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-        padding: 25px;
-    }
+    // @include mobile {
+    //     flex-wrap: wrap;
+    //     flex-direction: column-reverse;
+    //     padding: 25px;
+    // }
     .studio {
         .title2 {
             color: $theme-secondary;

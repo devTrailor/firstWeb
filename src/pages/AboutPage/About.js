@@ -27,21 +27,24 @@ import Newsletter from "../../components/NewLetter/Newsletter";
 import UserMap from "../../components/UserMap/UserMap";
 import UserConatctCard from "../../components/UserContactcard/UserConatctCard";
 import Footer from "../../components/Footer/Footer";
+import Copyright from "../../components/Copyright/Copyright";
 
 function About() {
   return (
     <div className="about-page">
       <Header />
-      <Hero
-        title1=" Modern Studio"
-        title2="We’re Help To Build Your Dream Project"
-        para="Agency provides a full service range including technical skills, design, business understanding."
-        workBtn="How We Work"
-        ContactUs="Contact Us"
-        avtarSource={Avatar}
-        infoPara="Put themselves in the merchant's shoes"
-        companyName="Meta Inc."
-        thumb1={Thumb} />
+      <div className="hero_section">
+        <Hero
+          title1=" Modern Studio"
+          title2="We’re Help To Build Your Dream Project"
+          para="Agency provides a full service range including technical skills, design, business understanding."
+          workBtn="How We Work"
+          ContactUs="Contact Us"
+          avtarSource={Avatar}
+          infoPara="Put themselves in the merchant's shoes"
+          companyName="Meta Inc."
+          thumb1={Thumb} />
+      </div>
       <div className="card-container">
         <div className="cards">
           <Cards source={require("../../assets/imags/Bitmap1.png")} />
@@ -154,6 +157,10 @@ function About() {
 
       <div className="footer-section">
         <Footer />
+      </div>
+      {/* Copyright */}
+      <div className="copyright-section" style={{ backgroundColor: "#FDF0E9" }}>
+        <Copyright />
       </div>
 
     </div>

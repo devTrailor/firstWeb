@@ -1,50 +1,42 @@
 @import "../../../styles/variables/colors";
-.navSection {
-    .navbar {
-        background-color: $theme-primary;
-        display: flex;
-        justify-content: space-between;
+.navbar {
+    background-color: $theme-primary;
+    .navbar-nav {
+        justify-content: flex-end;
         align-items: center;
-        height: 70px;
-        padding: 0 70px;
-        .lists {
-            display: flex;
+        display: flex;
+        gap: 50px;
+        a {
+            text-decoration: none;
+            color: $white;
+            font-size: 16px;
             position: relative;
-            justify-content: center;
-            align-items: center;
-            gap: 150px;
-            li {
-                list-style: none;
-                a {
-                    font-size: 20px;
-                    text-decoration: none;
-                    color: $white;
+            &:hover {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: 3px;
+                    bottom: -10px;
+                    left: 0;
+                    background-color: $theme-secondary;
+                    width: 100%;
                 }
             }
         }
-        .contact-btn {
-            a {
-                border-radius: 5px;
-                border: 1px solid #707070;
-                padding: 5px 15px;
-                color: $white;
-                font-size: 15px;
-                background: transparent;
-                cursor: pointer;
-                width: 100%;
-            }
-        }
-        .active {
-            position: relative;
-            &::before {
-                content: "";
-                height: 3px;
-                bottom: -10px;
-                left: 0;
-                background-color: $theme-secondary;
-                width: 100%;
-                position: absolute;
-            }
+    }
+    .navbar-collapse {
+        justify-content: center;
+    }
+    .active {
+        position: relative;
+        &::before {
+            content: "";
+            height: 3px;
+            bottom: -10px;
+            left: 0;
+            background-color: $theme-secondary;
+            width: 100%;
+            position: absolute;
         }
     }
 }

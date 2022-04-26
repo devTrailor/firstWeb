@@ -2,15 +2,15 @@
 @import "../../styles/variables/mixins";
 .service-intro {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 60px 0;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     gap: 220px;
     @include mobile {
         gap: 20px;
     }
     .thumb {
-        max-width: 75%;
+        width: 70%;
         @include mobile {
             max-width: 100%;
         }

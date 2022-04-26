@@ -8,7 +8,7 @@ import "./style.scss";
 const Hero = (props) => {
   return (
     <>
-      <div className="bio">
+      <div className="bio container">
         <div className="studio">
           <h5 className="title2">{props.title1}</h5>
           <h2 className="title1">{props.title2}</h2>

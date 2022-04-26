@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300;400&display=swap');
-// @import "antd/dist/antd.css";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300;400&display=swap");
 // variables
 @import "../styles/variables/colors";
 @import "../styles/variables/mixins";
-// theme styles files
 @import "../styles/xtras";
+// theme styles files
+@import "~bootstrap/scss/bootstrap";
+@import '~antd/dist/antd.css'; //antd css
 // custom css
 * {
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 ::selection {
@@ -112,4 +113,8 @@ body {
 .container {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
 }

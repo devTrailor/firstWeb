@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 // import React, { useState } from "react";
 // import { Modal, Button } from "antd";
+import { Container, Nav, Navbar } from "react-bootstrap";
 
 import Logo from "../../../assets/logos/logo.png";
 
@@ -8,47 +9,33 @@ import Logo from "../../../assets/logos/logo.png";
 import "antd/dist/antd.css";
 import "./style.scss";
 
-const Navbar = () => {
+const Navigation = () => {
   return (
-    <div className="navSection">
-      <nav className="navbar">
-        {/* Logo */}
-        <div className="logo">
+    <>
+      <Navbar expand="lg">
+        <Container fluid>
           <Link to="/">
-            <img src={Logo} alt="Loading..." srcset="" />
+            <img src={Logo} alt="Loading..." />
           </Link>
-        </div>
-        {/* Lists */}
-        <ul className="lists">
-          <li>
-            <NavLink to="/" activeClassName="active">
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/services" activeClassName="active">
-              Services
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink to="/pricing" activeClassName="active">
-              Pricing
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/blogs" activeClassName="active">
-              Blog
-            </NavLink>
-          </li>
-        </ul>
-        {/* For Contact */}
-        <div className="contact-btn">
-          <Link to="/contact-us">Contact Us</Link>
-        </div>
-      </nav>
-    </div>
+          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Collapse id="navbarScroll">
+            <Nav
+              style={{ maxHeight: '100px' }}
+              navbarScroll
+              right
+            >
+              <NavLink to="/" activeClassName="active">Home</NavLink>
+              <NavLink to="/services" activeClassName="active">Services</NavLink>
+              <NavLink to="/pricing" activeClassName="active">Pricing</NavLink>
+              <NavLink to="/blogs" activeClassName="active">Blogs</NavLink>
+              <NavLink to="/contact-us" activeClassName="active">Contact Us</NavLink>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </>
   );
 };
 
-export default Navbar;
+export default Navigation;
+
