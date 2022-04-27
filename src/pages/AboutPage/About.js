@@ -1,7 +1,6 @@
 import React from "react";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import Cards from "../../components/comcard/Cards";
-import Header from "../../components/Header/Header";
 import Hero from "../../components/HeroSection/Hero";
 import Avatar from "../../assets/imags/avatar1.png";
 import Thumb from "../../assets/imags/pic1.png";
@@ -32,7 +31,7 @@ import Copyright from "../../components/Copyright/Copyright";
 function About() {
   return (
     <div className="about-page">
-      <Header />
+      {/* <Header /> */}
       <div className="hero_section">
         <Hero
           title1=" Modern Studio"
@@ -57,7 +56,7 @@ function About() {
       {/* About-Hero */}
 
       <div className="about-hero-section ">
-        <div className="container">
+        {/* <div className="container"> */}
           <Hero
             thumb1={require("../../assets/imags/pic2.png")}
             title1="About"
@@ -65,7 +64,7 @@ function About() {
             subtitle="Provides a full service range"
             para="Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team."
             workBtn="About Us" />
-        </div>
+        {/* </div> */}
         <div className="hero-cards">
           <div className="container">
             <HeroCard title="42%" description="Years of experience" />

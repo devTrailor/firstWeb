@@ -15,14 +15,17 @@ const Hero = (props) => {
           <p className="subtitle title4">{props.subtitle}</p>
           <p className="description">{props.para}</p>
 
-          <div className="btns">
-            <li>
-              <Link to="#">{props.workBtn}</Link>
-            </li>
-            <li>
-              <Link to="#">{props.ContactUs}</Link>
-            </li>
-          </div>
+          {
+            props.workBtn &&
+            <div className="btns">
+              <li>
+                <Link to="/aboutUs">{props.workBtn}</Link>
+              </li>
+              <li>
+                <Link to="/">{props.ContactUs}</Link>
+              </li>
+            </div>
+          }
 
           {props.avtarSource && <div className="avatar-info">
             <div className="avatar">

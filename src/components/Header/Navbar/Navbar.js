@@ -20,11 +20,10 @@ const Navigation = () => {
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
-              style={{ maxHeight: '100px' }}
               navbarScroll
               right
             >
-              <NavLink to="/" activeClassName="active">Home</NavLink>
+              <NavLink to="/" activeClassName="active">About</NavLink>
               <NavLink to="/services" activeClassName="active">Services</NavLink>
               <NavLink to="/pricing" activeClassName="active">Pricing</NavLink>
               <NavLink to="/blogs" activeClassName="active">Blogs</NavLink>

@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // eslint-disable-next-line
 import "swiper/css/bundle";
 import "./styles/App.scss";
+// Navigation Page
 
 const App = () => {
   return (

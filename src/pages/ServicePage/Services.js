@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "../../components/Header/Navbar/Navbar";
+// import Navbar from "../../components/Header/Navbar/Navbar";
 
 const Services = () => {
   return (
     <div className="services-page">
-      <Navbar/>
+      {/* <Navbar/> */}
       hello, service
     </div>
   );

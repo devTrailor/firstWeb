@@ -25,7 +25,7 @@ export const Faq = () => {
                 </div>
                 <div className="accordion">
                     <Collapse bordered={false} defaultActiveKey={['1']}>
-                        <Panel header="A digital agency is a business" style={{color: "red"}} key="1">
+                        <Panel header="A digital agency is a business" style={{ color: "red" }} key="1">
                             <p style={{ paddingLeft: 24 }} className="description">
                                 A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found
                                 as a welcome guest in many households across the world.
