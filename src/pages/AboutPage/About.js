@@ -151,17 +151,6 @@ function About() {
             title="Address" number="2247 Lunetta Street, TX 76301" />
         </div>
       </div>
-
-      {/* Footer_section */}
-
-      <div className="footer-section">
-        <Footer />
-      </div>
-      {/* Copyright */}
-      <div className="copyright-section" style={{ backgroundColor: "#FDF0E9" }}>
-        <Copyright />
-      </div>
-
     </div>
   );
 }

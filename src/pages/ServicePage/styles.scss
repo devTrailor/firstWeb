@@ -1,0 +1,82 @@
+@import "../../styles/variables/colors";
+.services-page {
+    .service_intro_section {
+        background-color: $theme-primary;
+        height: 400px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .services {
+        background-color: $theme-light-yellow;
+        .service-provide {
+            padding: 90px 0;
+            .title2 {
+                font-size: 16px;
+                color: $theme-secondary;
+            }
+            .service-flex {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .highlight_info {
+                    max-width: 470px;
+                    .title {
+                        font-size: 40px;
+                        color: #391400;
+                    }
+                }
+                .info {
+                    max-width: 570px;
+                    color: #391400;
+                    font-size: 16px;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+    .accordian {
+        background-color: $theme-light-yellow;
+        .accordian_info {
+            .ant-collapse-header {
+                background-color: $theme-light-yellow;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+                padding: 55px 20px;
+                font-size: 56px;
+                .ant-collapse-header-title {
+                    color: $theme-secondary;
+                }
+            }
+            .anticon {
+                background-color: $theme-secondary;
+                color: $white;
+                padding: 7px;
+                border-radius: 50px;
+            }
+            .ant-collapse-item {
+                border: 1px solid #f3d1bf;
+                border-radius: 3px;
+            }
+            .ant-collapse {
+                border-left: none;
+            }
+        }
+    }
+    .how-we-work {
+        background-color: $theme-light-yellow;
+        .container {
+            .how-work {
+                justify-content: space-between;
+            }
+        }
+    }
+    // contact-section
+    .contact-hero {
+        background-color: $theme-light-yellow;
+        .container {
+            background-color: #EF6D58;
+            border-radius: 10px;
+        }
+    }
+}

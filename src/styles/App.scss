@@ -5,7 +5,7 @@
 @import "../styles/xtras";
 // theme styles files
 @import "~bootstrap/scss/bootstrap";
-@import '~antd/dist/antd.css'; //antd css
+@import "~antd/dist/antd.css"; //antd css
 // custom css
 * {
     font-family: "Raleway", sans-serif;
@@ -117,4 +117,27 @@ body {
 
 a {
     text-decoration: none;
+}
+
+// global csss
+.footer-section {
+    background-color: $theme-light-yellow;
+    .container {
+        border-bottom: 1px solid #f3d1bf;
+    }
+}
+
+.copyright-content {
+    background-color: $theme-light-yellow;
+    .copyright {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .policy {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            padding: 40px 0;
+        }
+    }
 }
