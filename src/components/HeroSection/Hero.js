@@ -22,7 +22,7 @@ const Hero = (props) => {
                 <Link to="/aboutUs">{props.workBtn}</Link>
               </li>
               <li>
-                <Link to="/">{props.ContactUs}</Link>
+                <Link to="/contact-us">{props.ContactUs}</Link>
               </li>
             </div>
           }

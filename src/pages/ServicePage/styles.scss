@@ -37,6 +37,7 @@
     }
     .accordian {
         background-color: $theme-light-yellow;
+        position: relative;
         .accordian_info {
             .ant-collapse-header {
                 background-color: $theme-light-yellow;
@@ -44,6 +45,7 @@
                 flex-direction: row-reverse;
                 padding: 55px 20px;
                 font-size: 56px;
+                color: #391400;
                 .ant-collapse-header-title {
                     color: $theme-secondary;
                 }
@@ -57,9 +59,51 @@
             .ant-collapse-item {
                 border: 1px solid #f3d1bf;
                 border-radius: 3px;
+                .ant-collapse-content {
+                    border: 1px solid #f3d1bf;
+                    background-color: $theme-light-yellow;
+                }
             }
             .ant-collapse {
                 border-left: none;
+            }
+            .design-part {
+                display: flex;
+                justify-content: flex-end;
+                .design-info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    .title2 {
+                        max-width: 558px;
+                        font-size: 40px;
+                        color: #391400;
+                        font-weight: 300;
+                    }
+                    .description {
+                        max-width: 558px;
+                        font-size: 16px;
+                        color: #391400;
+                        font-weight: 100;
+                    }
+                    .design-lists {
+                        list-style: none;
+                        li {
+                            position: relative;
+                            font-size: 16px;
+                            &::before {
+                                position: absolute;
+                                content: "";
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 50px;
+                                background-color: #ef6d58;
+                                left: -20px;
+                                top: 5px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -75,7 +119,7 @@
     .contact-hero {
         background-color: $theme-light-yellow;
         .container {
-            background-color: #EF6D58;
+            background-color: #ef6d58;
             border-radius: 10px;
         }
     }
