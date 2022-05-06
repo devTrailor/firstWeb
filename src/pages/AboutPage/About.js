@@ -15,7 +15,6 @@ import HowWork from "../../components/howWork/HowWork";
 import Features from "../../components/Features/Features";
 import ServiceIntro from "../../components/ServiceIntro/ServiceIntro";
 import ServicesInfo from "../../components/ServiceIntro/ServiceInfo/ServicesInfo";
-import PortfoiloIntro from "../../components/PortfolioIntro/PortfoiloIntro";
 import FutureEvents from "../../components/FutureEvents/FutureEvents";
 import OurTeam from "../../components/OurTeam/OurTeam";
 import Testimonials from "../../components/Testimonials/Testimonials";
@@ -25,8 +24,7 @@ import OurBlogs from "../../components/OurBlogs/OurBlogs";
 import Newsletter from "../../components/NewLetter/Newsletter";
 import UserMap from "../../components/UserMap/UserMap";
 import UserConatctCard from "../../components/UserContactcard/UserConatctCard";
-import Footer from "../../components/Footer/Footer";
-import Copyright from "../../components/Copyright/Copyright";
+import PortfolioIntro from "../../components/PortfolioIntro/PortfolioIntro";
 
 function About() {
   return (
@@ -57,13 +55,13 @@ function About() {
 
       <div className="about-hero-section ">
         {/* <div className="container"> */}
-          <Hero
-            thumb1={require("../../assets/imags/pic2.png")}
-            title1="About"
-            title2="An Experience Design Agency"
-            subtitle="Provides a full service range"
-            para="Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team."
-            workBtn="About Us" />
+        <Hero
+          thumb1={require("../../assets/imags/pic2.png")}
+          title1="About"
+          title2="An Experience Design Agency"
+          subtitle="Provides a full service range"
+          para="Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team."
+          workBtn="About Us" />
         {/* </div> */}
         <div className="hero-cards">
           <div className="container">
@@ -105,7 +103,7 @@ function About() {
 
       {/* Porfolio-intro */}
       <div className="portfolio-intro-section">
-        <PortfoiloIntro />
+        <PortfolioIntro/>
       </div>
 
       {/* Future Events */}

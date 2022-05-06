@@ -1,0 +1,23 @@
+@import "../../styles/variables/colors";
+.blog-card {
+    .card-body {
+        .title {
+            font-size: 20px;
+        }
+        .description {
+            font-size: 40px;
+            font-weight: 100;
+        }
+        .blog_img {
+            border-radius: 10px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                transition: all .5s;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

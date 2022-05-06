@@ -1,0 +1,26 @@
+@import "../../styles/variables/colors";
+.portfolio-card {
+    border-radius: 10px;
+    .card-body {
+        max-width: 370px;
+        .project-img {
+            overflow: hidden;
+            img {
+                border-radius: 10px;
+                width: 100%;
+                transition: all 0.5s;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+        .title {
+            color: $white;
+            text-align: center;
+            margin-top: 20px;
+        }
+        &:hover {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+    }
+}

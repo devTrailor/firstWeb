@@ -8,6 +8,7 @@ import SectionIntro from "../../components/SectionIntro/SectionIntro";
 import HowWork from "../../components/howWork/HowWork";
 import ContactHero from "../../components/contactHeroposter/ContactHero";
 import InfoPage from "./InfoPage";
+import { connect, useSelector } from "react-redux";
 
 // Controls the text in the accordian
 const { Panel } = Collapse;
@@ -16,6 +17,9 @@ function callback(key) {
 }
 
 const Services = () => {
+
+  const projects = useSelector(state => state.projects);
+  console.log(projects);
   return (
     <>
       {/* Services Intro_page */}

@@ -23,11 +23,11 @@ const Navigation = () => {
               navbarScroll
               right
             >
-              <NavLink to="/" activeClassName="active">About</NavLink>
-              <NavLink to="/services" activeClassName="active">Services</NavLink>
-              <NavLink to="/pricing" activeClassName="active">Pricing</NavLink>
-              <NavLink to="/blogs" activeClassName="active">Blogs</NavLink>
-              <NavLink to="/contact-us" activeClassName="active">Contact Us</NavLink>
+              <NavLink to="/" activeclassname="active">About</NavLink>
+              <NavLink to="/services" activeclassname="active">Services</NavLink>
+              <NavLink to="/portfolio" activeclassname="active">Portfolio</NavLink>
+              <NavLink to="/blogs" activeclassname="active">Blogs</NavLink>
+              <NavLink to="/contact-us" activeclassname="active">Contact Us</NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>

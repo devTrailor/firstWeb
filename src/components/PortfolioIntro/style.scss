@@ -1,6 +1,7 @@
 @import "../../styles/variables/colors";
 .portfolio-intro {
     padding: 90px 0;
+    // height: 1000px;
     .title2 {
         text-align: center;
         font-weight: 100;
@@ -57,6 +58,7 @@
         }
         .ant-tabs-content-holder {
             background-color: $theme-primary;
+            // height: 1000px;
         }
     }
     .card-container {
@@ -66,26 +68,5 @@
         gap: 30px;
         background-color: transparent;
         padding: 20px 0;
-        .card {
-            overflow: hidden;
-            cursor: pointer;
-            max-width: 30%;
-            border-radius: 10px;
-            &:hover {
-                background-color: transparent;
-                transform: scale(1.05);
-                transition: all .3s;
-                box-shadow: 0 5px 32px rgba($gray-1, 0.4);
-            }
-            .card-body {
-                img {
-                    border-radius: 10px;
-                    width: 100%;
-                }
-                .title {
-                    margin: 0;
-                }
-            }
-        }
     }
 }

@@ -1,0 +1,54 @@
+@import "../../styles/variables/colors";
+.blog-page {
+    background-color: $theme-light-yellow;
+    .blog_intro_section {
+        background-color: $theme-primary;
+        height: 400px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .blogs {
+        .big-blog-list {
+            padding: 50px 0;
+            display: flex;
+            justify-content: space-between;
+            background-color: $theme-light-yellow;
+            border-bottom: 1px solid #F3D1BF;
+            .blog-card {
+                width: 570px;
+                .card-body {
+                    cursor: pointer;
+                    .blog_img {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .full-blog-list {
+            background-color: $theme-light-yellow;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 90px 0;
+            border-bottom: 1px solid #F3D1BF;
+            .blog-card {
+                width: 370px;
+                .card-body {
+                    cursor: pointer;
+                    .blog_img {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .newsletter {
+        background-color: $theme-light-yellow;
+    }
+}

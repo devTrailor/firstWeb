@@ -37,10 +37,10 @@ const ServicesInfo = () => {
         <h5 className="title2">Service</h5>
         <p className="para">How Our Agency Can Help</p>
         <div className="card-container">
-          {Data.map((elm, id) => {
+          {Data.map((elm) => {
             return (
               <>
-                <div className="card" key={id}>
+                <div className="card" key={elm.id}>
                   <div className="card-body">
                     <div className="icon">{elm.icon}</div>
                     <h2 className="title3">{elm.title}</h2>

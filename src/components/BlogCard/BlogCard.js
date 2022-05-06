@@ -1,9 +1,9 @@
 import React from 'react'
 // Styles
-
+import "./style.scss"
 const BlogCard = (props) => {
     return (
-        <div className='card'>
+        <div className='blog-card'>
             <div className="card-body">
                 <div className="blog_img">
                     <img src={props.blogImg} alt="Loading...." />

@@ -6,12 +6,14 @@ import Copyright from "./components/Copyright/Copyright";
 import Footer from "./components/Footer/Footer";
 import Contact from "./components/FormSection/Contact";
 import Header from "./components/Header/Header";
+import PortfolioDetails from "./components/PortfolioIntro/PortfolioDetails";
+// import PortfolioIntro from "./components/PortfolioIntro/PortfolioIntro";
 
 // Pages
 import About from "./pages/AboutPage/About";
 import BlogPage from "./pages/BlogPage/BlogPage";
-import PricePage from "./pages/PricePage/PricePage";
 import Services from "./pages/ServicePage/Services";
+import Portfolio from "./pages/Portfolio/Portfolio"
 // import AboutUsInfo from "./pages/SubAboutPage/AboutUsInfo";
 
 const AppRouter = () => {
@@ -24,9 +26,10 @@ const AppRouter = () => {
             {/* <Route path="/aboutUs" element={<AboutUsInfo />} /> */}
           </Route>
           <Route path="/services" element={<Services />} />
-          <Route path="/pricing" element={<PricePage />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/blogs" element={<BlogPage />} />
           <Route path="/contact-us" element={<Contact />} />
+          <Route exact path="/project/:id" element={<PortfolioDetails />} />
         </Routes>
 
         {/* footer-part */}

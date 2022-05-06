@@ -1,4 +1,3 @@
-import { OmitProps } from 'antd/lib/transfer/ListBody'
 import React from 'react'
 
 const InfoPage = (props) => {
@@ -10,13 +9,13 @@ const InfoPage = (props) => {
                         {props.title}
                     </h1>
                     <div className="sub-info description">
-                         {props.description}
+                        {props.description}
                     </div>
                     <div className="design-lists">
                         <li>{props.subject_title1}</li>
                         <li>{props.subject_title2}</li>
                         <li>{props.subject_title3}</li>
-                     
+
                     </div>
                 </div>
             </div>
