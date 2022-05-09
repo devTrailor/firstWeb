@@ -1,0 +1,31 @@
+@import "../../styles/variables/colors";
+.project-datails-section {
+    background-color: $theme-light-yellow;
+    padding: 50px 0;
+    .project-details {
+        .title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .anticon {
+                color: #391400;
+            }
+            .back-link {
+                color: #391400;
+            }
+        }
+        .title1 {
+            font-size: 72px;
+            max-width: 386px;
+        }
+        .sub-title {
+            font-size: 18px;
+            font-weight: 100;
+            display: block;
+            max-width: 570px;
+        }
+        .description {
+            max-width: 570px;
+        }
+    }
+}

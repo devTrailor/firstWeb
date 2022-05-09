@@ -19,7 +19,7 @@ const PortfolioLists = ({ projects }) => {
                             return (
                                 <div>
                                     <Link to={'project/' + item.id}>
-                                        <PortfolioCard img_url = {item.img_url} title = {item.title} />
+                                        <PortfolioCard img_url={item.img_url} title={item.title} />
                                     </Link>
                                 </div>
                             );
@@ -31,14 +31,16 @@ const PortfolioLists = ({ projects }) => {
                         {projects[1].map((item) => {
                             return (
                                 <>
-                                    <Link to={'project/' + item.id}>
-                                        <div className="card">
-                                            <div className="card-body">
-                                                <img src={item.img_url} alt="Loading..." />
-                                                <h2 className="title">{item.title}</h2>
+                                    <div>
+                                        <Link to={'project/' + item.id}>
+                                            <div className="card">
+                                                <div className="card-body">
+                                                    <img src={item.img_url} alt="Loading..." />
+                                                    <h2 className="title">{item.title}</h2>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </Link>
+                                        </Link>
+                                    </div>
                                 </>
                             );
                         })}

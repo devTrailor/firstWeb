@@ -6,7 +6,6 @@ import "./style.scss"
 import SectionIntro from "../../components/SectionIntro/SectionIntro";
 import BlogCard from "../../components/BlogCard/BlogCard";
 import Newsletter from "../../components/NewLetter/Newsletter";
-import ContactHero from "../../components/contactHeroposter/ContactHero";
 
 const BlogPage = () => {
   return (

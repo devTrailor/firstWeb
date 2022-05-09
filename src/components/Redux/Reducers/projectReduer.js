@@ -2,55 +2,55 @@ const initialState = {
     projects: [
         [
             {
-                id: 1,
+                id: 0,
                 img_url:
                     "https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149__340.jpg",
                 title: "Validation",
             },
             {
-                id: 2,
+                id: 1,
                 img_url:
                     "https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149__340.jpg",
                 title: "Web",
             },
             {
-                id: 3,
+                id: 2,
                 img_url:
                     "https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149__340.jpg",
                 title: "Valid",
             },
             {
-                id: 4,
+                id: 3,
                 img_url:
                     "https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149__340.jpg",
                 title: "Hello",
             },
             {
-                id: 5,
+                id: 4,
                 img_url:
                     "https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149__340.jpg",
                 title: "HI",
             },
             {
-                id: 6,
+                id: 5,
                 img_url:
                     "https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149__340.jpg",
                 title: "voletile",
             },
             {
-                id: 7,
+                id: 6,
                 img_url:
                     "https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149__340.jpg",
                 title: "none",
             },
             {
-                id: 8,
+                id: 7,
                 img_url:
                     "https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149__340.jpg",
                 title: "wel",
             },
             {
-                id: 9,
+                id: 8,
                 img_url:
                     "https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149__340.jpg",
                 title: "Fac",
@@ -58,31 +58,32 @@ const initialState = {
         ],
         [
             {
-                id: 1,
+                id: 0,
                 img_url:
                     "https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149__340.jpg",
                 title: "Hello",
             },
             {
-                id: 2,
+                id: 1,
                 img_url:
                     "https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149__340.jpg",
                 title: "HI",
             },
             {
-                id: 3,
+                id: 2,
                 img_url:
                     "https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149__340.jpg",
                 title: "voletile",
             },
             {
-                id: 4,
+                id: 3,
                 img_url:
                     "https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149__340.jpg",
                 title: "none",
             },
         ],
-    ]
+    ],
+  
 }
 
 export const projectReducer = (state = initialState, action) => {

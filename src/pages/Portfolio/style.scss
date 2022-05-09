@@ -1,0 +1,64 @@
+@import "../../styles/variables/colors";
+.portfolio-section {
+    background-color: $theme-light-yellow;
+    .potfolio-intro-section {
+        background-color: $theme-primary;
+        height: 400px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .portfolio-list {
+        .ant-tabs {
+            border-bottom: 1px solid #F3D1BF;
+            .ant-tabs-tab {
+                font-size: 16px;
+                font-weight: 400;
+                color: $theme-secondary;
+                &:hover {
+                    color: $theme-primary;
+                }
+            }
+            .ant-tabs-ink-bar {
+                height: 2px;
+                background-color: $theme-secondary;
+            }
+            .ant-tabs-tab-active {
+                .ant-tabs-tab-btn {
+                    color: $theme-primary;
+                }
+            }
+            .ant-tabs-tab-btn:focus,
+            .ant-tabs-tab-remove:focus,
+            .ant-tabs-tab-btn:active,
+            .ant-tabs-tab-remove:active {
+                color: $theme-primary;
+            }
+            .ant-tabs-nav-wrap {
+                justify-content: center;
+            }
+            .ant-tabs-nav-list {
+                gap: 30px;
+            }
+            .ant-tabs-nav {
+                &::before {
+                    border-bottom: none;
+                }
+            }
+            .ant-tabs-content-holder {
+                background-color: $theme-light-yellow;
+            }
+        }
+        .portfolio-card {
+            border-radius: 10px;
+            .card-body {
+                .project-img {
+                    border-radius: 10px;
+                }
+                .title {
+                    color: $theme-secondary;
+                }
+            }
+        }
+    }
+}

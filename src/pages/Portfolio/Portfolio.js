@@ -1,11 +1,22 @@
 import React from "react";
-// import Header from "../../components/Header/Header";
+import PortfolioIntro from "../../components/PortfolioIntro/PortfolioIntro";
+import SectionIntro from "../../components/SectionIntro/SectionIntro";
+// styles
+import "./style.scss"
 
 const PricePage = () => {
   return (
-    <div>
-      {/* <Header /> */}
-      PricePage
+    <div className="portfolio-section">
+      <div className="potfolio-intro-section">
+        <SectionIntro
+          title="Potfolio" intro_para="Agency provides a full service range including technical skills, design, business understanding."
+        />
+      </div>
+      <div className="portfolio-list">
+        <PortfolioIntro />
+      </div>
+
+
     </div>
   );
 };
