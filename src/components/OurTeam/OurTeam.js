@@ -75,9 +75,8 @@ const OurTeam = () => {
     draggable: true,
     cellAlign: "center",
     pageDots: true,
-    prevNextButtons: true,
-    prevNextButtons: true,
-    autoPlay: false
+    prevNextButtons: false,
+    autoPlay: true,
   };
 
   return (

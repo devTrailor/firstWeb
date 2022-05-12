@@ -12,7 +12,7 @@ const ServiceIntro = () => {
         </div>
         <div className="service-help">
           <h5 className="title2">Services</h5>
-          <h2 className="title1">Making Complex Digital Products</h2>
+          <div className="title1">Making Complex Digital Products</div>
           <p className="description">
             Agency provides a full service range including technical skills,
             design, business.

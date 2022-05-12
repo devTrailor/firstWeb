@@ -27,5 +27,9 @@
         .description {
             max-width: 570px;
         }
+        .project-info {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }

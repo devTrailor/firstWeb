@@ -4,7 +4,7 @@ import SectionIntro from "../../components/SectionIntro/SectionIntro";
 // styles
 import "./style.scss"
 
-const PricePage = () => {
+const Portfolio = () => {
   return (
     <div className="portfolio-section">
       <div className="potfolio-intro-section">
@@ -21,4 +21,4 @@ const PricePage = () => {
   );
 };
 
-export default PricePage;
+export default Portfolio;

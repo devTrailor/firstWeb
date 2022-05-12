@@ -21,6 +21,13 @@
         .ant-row {
             justify-content: center;
             width: 100%;
+            gap: 10px;
+            .card {
+                background-color: $theme-light-yellow;
+                &:hover {
+                    background-color: $white;
+                }
+            }
             .ant-col {
                 border: 1px solid #F3D1BF;
                 .card {

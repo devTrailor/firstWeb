@@ -13,7 +13,9 @@ const PortfolioDetails = (props) => {
   console.log(projects);
   console.log(projects[0][id]);
 
-  if (projects) {
+
+
+  if (projects && projects[0][id] || projects[1][id]) {
     const { title, img_url } = projects[0][id]
     // var { title,img_url } = projects[1][id]
     console.log(title, img_url);
@@ -39,7 +41,7 @@ const PortfolioDetails = (props) => {
               <h6 className="title">CLIENTS</h6>
               <div className="client-details">
                 <div className="company-logo">
-                  <img src={img_url} alt="Loading..." />
+                  <img src="" alt="Loading..." />
                 </div>
                 <h6 className="title date">DATE</h6>
                 <span>Dec 2021</span>
@@ -82,6 +84,7 @@ const PortfolioDetails = (props) => {
       </div>
     )
   } else {
+    const { title, img_url } = projects[1][id]
     return (
       <div className="container">
         <p>Loading project...</p>

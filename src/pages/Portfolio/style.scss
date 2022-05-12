@@ -9,6 +9,9 @@
         justify-content: center;
     }
     .portfolio-list {
+        .title1 {
+            color: $theme-primary;
+        }
         .ant-tabs {
             border-bottom: 1px solid #F3D1BF;
             .ant-tabs-tab {

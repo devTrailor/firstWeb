@@ -1,6 +1,12 @@
 @import "../../../styles/variables/colors";
 .navbar {
     background-color: $theme-primary;
+    // .navbar-toggler {
+    //     border-color: $white;
+    // }
+    // .navbar-toggler-icon {
+    //     color: $white;
+    // }
     .navbar-nav {
         justify-content: flex-end;
         align-items: center;

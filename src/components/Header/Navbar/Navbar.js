@@ -13,7 +13,7 @@ const Navigation = () => {
   return (
     <>
       <Navbar expand="lg">
-        <Container fluid>
+        <Container>
           <Link to="/">
             <img src={Logo} alt="Loading..." />
           </Link>

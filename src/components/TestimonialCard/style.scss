@@ -1,10 +1,6 @@
 @import "../../styles/variables/colors";
 .card {
     cursor: pointer;
-    &:hover {
-        background-color: $white;
-        transition: all .5s;
-    }
     .card-body {
         padding: 25px;
         .stars {

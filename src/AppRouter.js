@@ -12,8 +12,8 @@ import PortfolioDetails from "./components/PortfolioIntro/PortfolioDetails";
 // Pages
 import About from "./pages/AboutPage/About";
 import BlogPage from "./pages/BlogPage/BlogPage";
+import Portfolio from "./pages/Portfolio/Portfolio";
 import Services from "./pages/ServicePage/Services";
-import Portfolio from "./pages/Portfolio/Portfolio"
 // import AboutUsInfo from "./pages/SubAboutPage/AboutUsInfo";
 
 const AppRouter = () => {
@@ -26,7 +26,7 @@ const AppRouter = () => {
             {/* <Route path="/aboutUs" element={<AboutUsInfo />} /> */}
           </Route>
           <Route path="/services" element={<Services />} />
-          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio" element={<Portfolio/>} />
           <Route path="/blogs" element={<BlogPage />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route exact path="/project/:id" element={<PortfolioDetails />} />

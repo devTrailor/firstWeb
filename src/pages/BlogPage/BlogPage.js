@@ -44,7 +44,6 @@ const BlogPage = () => {
               blogTitle="Stories" blogDescription="Performance marketing agencies specialize" blogDate="7 Dec, 2021" />
           </div>
         </div>
-
         <div className="newsletter">
           <Newsletter />
         </div>

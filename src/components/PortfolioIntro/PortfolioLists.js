@@ -26,19 +26,14 @@ const PortfolioLists = ({ projects }) => {
                         })}
                     </div>
                 </TabPane>
-                <TabPane tab="Web" key="2">
+                <TabPane tab="Web" key="2" className='web'>
                     <div className="container card-container">
                         {projects[1].map((item) => {
                             return (
                                 <>
                                     <div>
                                         <Link to={'project/' + item.id}>
-                                            <div className="card">
-                                                <div className="card-body">
-                                                    <img src={item.img_url} alt="Loading..." />
-                                                    <h2 className="title">{item.title}</h2>
-                                                </div>
-                                            </div>
+                                            <PortfolioCard img_url={item.img_url} title={item.title} />
                                         </Link>
                                     </div>
                                 </>
@@ -46,11 +41,16 @@ const PortfolioLists = ({ projects }) => {
                         })}
                     </div>
                 </TabPane>
-                <TabPane tab="Javascript" key="3">
-                    Javascript Works
+                <TabPane tab="Javascript" key="3" className='javaScript'>
+                    {/* <Link to={'project/' + item.id}>
+                        <PortfolioCard img_url={item.img_url} title={item.title} />
+                    </Link> */}
+
                 </TabPane>
-                <TabPane tab="React-Js" key="4">
-                    React-Js Works
+                <TabPane tab="React-Js" key="4" className='react-js'>
+                    {/* <Link to={'project/' + item.id}>
+                        <PortfolioCard img_url={item.img_url} title={item.title} />
+                    </Link> */}
                 </TabPane>
             </Tabs>
         </div>

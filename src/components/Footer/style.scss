@@ -1,11 +1,20 @@
 @import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
 .agency_footer {
     display: flex;
     justify-content: space-between;
     padding: 90px 0;
+    @include mobile {
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 20px;
+    }
     .agency {
         .title {
             color: #391400;
+            @include mobile {
+                text-align: center;
+            }
         }
     }
     .lists {
@@ -22,7 +31,12 @@
         align-items: center;
         .title {
             font-size: 16px;
-            color: #EF6D58;
+            color: #ef6d58;
+        }
+        .lists {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
     }
     .services {
@@ -31,13 +45,19 @@
         align-items: center;
         .title {
             font-size: 16px;
-            color: #EF6D58;
+            color: #ef6d58;
+        }
+        .lists {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
     }
     .Social_icons {
         .social_icons {
             display: flex;
             list-style: none;
+            justify-content: center;
             gap: 40px;
             .anticon {
                 font-size: 35px;

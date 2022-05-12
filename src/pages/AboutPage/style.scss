@@ -80,7 +80,8 @@
                 .card {
                     padding: 30px 0 30px 30px;
                     font-size: 40px;
-                    min-width: 391px;
+                    width: 391px;
+                    background-color: $theme-light-yellow;
                     border: 1px solid #f3d1bf;
                     .title1 {
                         font-weight: 100;
@@ -198,10 +199,23 @@
             .card {
                 border: 1px solid #f3d1bf;
                 width: 391px;
+                background-color: $theme-light-yellow;
                 .card-body {
                     .icon {
                         display: flex;
                         gap: 20px;
+                        align-items: center;
+                        .img_icon {
+                            color: $theme-secondary;
+                            font-size: 35px;
+                        }
+                        .title {
+                            font-size: 16px;
+                            color: $theme-secondary;
+                        }
+                        .description {
+                            color: #391400;
+                        }
                     }
                 }
             }

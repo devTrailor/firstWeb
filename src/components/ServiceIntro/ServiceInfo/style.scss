@@ -29,7 +29,12 @@
         .card {
             border: 1px solid #f3d1bf;
             max-width: 391px;
+            background-color: $theme-light-yellow;
             padding: 80px 20px 50px 50px;
+            &:hover {
+                background-color: $white;
+                transition: all 1s;
+            }
             .card-body {
                 .icon {
                     color: $theme-secondary;
