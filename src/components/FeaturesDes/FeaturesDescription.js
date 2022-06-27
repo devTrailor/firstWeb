@@ -15,7 +15,7 @@ const FeaturesDescription = () => {
           <Link to="/">Read More.</Link>
         </div>
       </div>
-      <div className="cards">
+      <div className="feature-cards">
         <div className="card">
           <h2 className="title2">Professional</h2>
           <p className="description">

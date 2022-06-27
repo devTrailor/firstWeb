@@ -9,33 +9,37 @@ const Hero = (props) => {
   return (
     <>
       <div className="bio container">
-        <div className="studio">
-          <h5 className="title2">{props.title1}</h5>
-          <h2 className="title1">{props.title2}</h2>
-          <p className="subtitle title4">{props.subtitle}</p>
-          <p className="description">{props.para}</p>
+        <div className="hero_data">
 
-          {
-            props.workBtn &&
-            <div className="btns">
-              <li>
-                <Link to="/aboutUs">{props.workBtn}</Link>
-              </li>
-              <li>
-                <Link to="/contact-us">{props.ContactUs}</Link>
-              </li>
-            </div>
-          }
 
-          {props.avtarSource && <div className="avatar-info">
-            <div className="avatar">
-              <img src={props.avtarSource} alt="Loading...." />
-            </div>
-            <div className="info">
-              <p className="description">{props.infoPara}</p>
-              <h3 className="title4">{props.companyName}</h3>
-            </div>
-          </div>}
+          <div className="studio">
+            <h5 className="title2">{props.title1}</h5>
+            <h2 className="title1">{props.title2}</h2>
+            <p className="subtitle title4">{props.subtitle}</p>
+            <p className="description">{props.para}</p>
+
+            {
+              props.workBtn &&
+              <div className="btns">
+                <li>
+                  <Link to="/aboutUs">{props.workBtn}</Link>
+                </li>
+                <li>
+                  <Link to="/contact-us">{props.ContactUs}</Link>
+                </li>
+              </div>
+            }
+
+            {props.avtarSource && <div className="avatar-info">
+              <div className="avatar">
+                <img src={props.avtarSource} alt="Loading...." />
+              </div>
+              <div className="info">
+                <p className="description">{props.infoPara}</p>
+                <h3 className="title4">{props.companyName}</h3>
+              </div>
+            </div>}
+          </div>
         </div>
 
         <div className="thumbs">

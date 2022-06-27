@@ -11,96 +11,101 @@
         flex-direction: column-reverse;
         padding: 25px;
     }
-    .studio {
-        .title2 {
-            color: $theme-secondary;
-            font-weight: 100;
-            @include mobile {
-                font-size: 16px;
-            }
-            // @include iphone5 {
-            //     font-size: 20px;
-            //     background-color: red;
-            // }
-        }
-        .title1 {
-            font-size: 72px;
-            max-width: 480px;
-            color: $white;
-            margin: 0;
-            @include mobile {
-                font-size: 40px;
-            }
-        }
-        .description {
-            font-size: 17px;
-            color: $gray-a;
-            max-width: 66%;
-            line-height: 40px;
-            @include mobile {
-                max-width: 100%;
-                font-size: 16px;
-            }
-        }
-        .btns {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-            @include mobile {
-                justify-content: space-around;
-            }
-            li {
-                list-style: none;
-                font-size: 16px;
-                cursor: pointer;
-                &:nth-child(1) {
-                    background-color: $theme-secondary;
-                    border-radius: 5px;
-                    padding: 10px 30px;
-                }
-                &:nth-child(2):hover {
-                    color: red;
-                }
-                a {
-                    text-decoration: none;
-                    color: $white;
-                }
-            }
-        }
-        .avatar-info {
-            display: flex;
-            margin-top: 25px;
-            align-items: center;
-            gap: 20px;
-            .avatar {
-                max-width: 22%;
+    .hero_data {
+        display: flex;
+        .studio {
+            width: 100%;
+            .title2 {
+                color: $theme-secondary;
+                font-weight: 100;
                 @include mobile {
-                    width: 22%;
+                    font-size: 16px;
                 }
-                img {
-                    width: 100%;
+                // @include iphone5 {
+                //     font-size: 20px;
+                //     background-color: red;
+                // }
+            }
+            .title1 {
+                font-size: 72px;
+                max-width: 480px;
+                color: $white;
+                margin: 0;
+                @include mobile {
+                    font-size: 40px;
                 }
             }
-            .info {
-                .description {
-                    min-width: 100%;
-                    font-size: 20px;
-                    font-weight: 100;
-                    margin: 0;
+            .description {
+                font-size: 17px;
+                color: $gray-a;
+                max-width: 66%;
+                line-height: 40px;
+                @include mobile {
+                    max-width: 82%;
+                    font-size: 16px;
                 }
-                .title4 {
-                    margin: 0;
-                    font-weight: 100;
-                    color: $white;
+            }
+            .btns {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                @include mobile {
+                    justify-content: space-around;
+                }
+                li {
+                    list-style: none;
+                    font-size: 16px;
+                    cursor: pointer;
+                    &:nth-child(1) {
+                        background-color: $theme-secondary;
+                        border-radius: 5px;
+                        padding: 10px 30px;
+                    }
+                    &:nth-child(2):hover {
+                        color: red;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: $white;
+                    }
+                }
+            }
+            .avatar-info {
+                display: flex;
+                margin-top: 25px;
+                align-items: center;
+                gap: 20px;
+                .avatar {
+                    max-width: 22%;
+                    @include mobile {
+                        width: 22%;
+                    }
+                    img {
+                        width: 100%;
+                    }
+                }
+                .info {
+                    .description {
+                        min-width: 100%;
+                        font-size: 20px;
+                        font-weight: 100;
+                        margin: 0;
+                    }
+                    .title4 {
+                        margin: 0;
+                        font-weight: 100;
+                        color: $white;
+                    }
                 }
             }
         }
     }
     .thumbs {
-        max-width: fit-content;
+        width: 600px;
         @include mobile {
             width: 326px;
         }
+        @include tablet {}
         img {
             width: 100%;
             object-fit: cover;

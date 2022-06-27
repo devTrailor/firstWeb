@@ -47,6 +47,7 @@ const FutureEvents = () => {
           return (
             <>
               <FutureCards
+                key={items.id}
                 date={items.date}
                 month={items.month}
                 year={items.year}
