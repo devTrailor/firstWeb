@@ -6,7 +6,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import Logo from "../../../assets/logos/logo.png";
 
 //Styles
-import "antd/dist/antd.css";
+// import "antd/dist/antd.css";
 import "./style.scss";
 
 const Navigation = () => {

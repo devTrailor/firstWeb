@@ -39,7 +39,6 @@ const ServicesInfo = () => {
         <div className="card-container">
           {Data.map((elm) => {
             return (
-              <>
                 <div className="card" key={elm.id}>
                   <div className="card-body">
                     <div className="icon">{elm.icon}</div>
@@ -48,7 +47,6 @@ const ServicesInfo = () => {
                     <Link to="/">{elm.more}</Link>
                   </div>
                 </div>
-              </>
             );
           })}
         </div>

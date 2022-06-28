@@ -45,7 +45,7 @@ const FutureEvents = () => {
       <div className="future-card-container">
         {cardData.map((items) => {
           return (
-            <>
+            <div key={items.id}>
               <FutureCards
                 key={items.id}
                 date={items.date}
@@ -56,7 +56,7 @@ const FutureEvents = () => {
                 description={items.description}
                 more={items.more}
               />
-            </>
+            </div>
           );
         })}
         {/* <FutureCards />

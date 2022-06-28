@@ -17,7 +17,7 @@ const PortfolioLists = ({ projects }) => {
                     <div className="container card-container">
                         {projects[0].map((item) => {
                             return (
-                                <div>
+                                <div key={item.id}>
                                     <Link to={'project/' + item.id}>
                                         <PortfolioCard img_url={item.img_url} title={item.title} />
                                     </Link>
@@ -30,13 +30,11 @@ const PortfolioLists = ({ projects }) => {
                     <div className="container card-container">
                         {projects[1].map((item) => {
                             return (
-                                <>
-                                    <div>
+                                    <div key={item.id}>
                                         <Link to={'project/' + item.id}>
                                             <PortfolioCard img_url={item.img_url} title={item.title} />
                                         </Link>
                                     </div>
-                                </>
                             );
                         })}
                     </div>

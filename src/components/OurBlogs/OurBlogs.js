@@ -38,10 +38,10 @@ const OurBlogs = () => {
             <div className="blog_cards">
                 {blogData.map((items) => {
                     return (
-                        <>
+                        <div key={items.id}>
                             <BlogCard key={items.id} blogImg={items.img_url}
                                 blogTitle={items.title} blogDescription={items.description} blogDate={items.date} />
-                        </>
+                        </div>
                     )
                 })}
             </div>

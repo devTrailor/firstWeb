@@ -3,7 +3,8 @@ import AppRouter from "./AppRouter";
 
 // Styles
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'antd/dist/antd.min.css';
+import 'antd/dist/antd.css';
+import 'antd/dist/antd.less';
 // eslint-disable-next-line
 import "swiper/css/bundle";
 import "./styles/App.scss";

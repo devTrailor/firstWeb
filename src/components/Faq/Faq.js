@@ -43,7 +43,7 @@ export const Faq = () => {
                                 as a welcome guest in many households across the world.
                             </p>
                         </Panel>
-                        <Panel header="Can provide your business" key="3">
+                        <Panel header="Can provide your business" key="4">
                             <p style={{ paddingLeft: 24 }} className="description">
                                 A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found
                                 as a welcome guest in many households across the world.

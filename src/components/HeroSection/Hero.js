@@ -10,8 +10,6 @@ const Hero = (props) => {
     <>
       <div className="bio container">
         <div className="hero_data">
-
-
           <div className="studio">
             <h5 className="title2">{props.title1}</h5>
             <h2 className="title1">{props.title2}</h2>

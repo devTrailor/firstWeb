@@ -26,10 +26,10 @@ const UserMap = () => {
                     <h2 className="title2">Get In Touch</h2>
                     <Input placeholder='Your email' />
                     <Select defaultValue="Subjects">
-                        <Option>1</Option>
-                        <Option>2</Option>
-                        <Option>3</Option>
-                        <Option>4</Option>
+                        <Select.Option>1</Select.Option>
+                        <Select.Option>2</Select.Option>
+                        <Select.Option>3</Select.Option>
+                        <Select.Option>4</Select.Option>
                     </Select>
                     <TextArea style={{ height: "150px" }}>fhhfs</TextArea>
                     <Button type="submit">Submit Now</Button>
@@ -37,7 +37,7 @@ const UserMap = () => {
 
                 </form>
 
-            
+
 
 
 

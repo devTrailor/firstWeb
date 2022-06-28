@@ -1,9 +1,9 @@
 import React from 'react'
-import { connect } from 'react-redux'
+import { useSelector } from 'react-redux'
 import PortfolioLists from './PortfolioLists';
 
-const PortfolioIntro = (props) => {
-    const { projects } = props;
+const PortfolioIntro = () => {
+    const projects = useSelector((state) => state.projects)
     console.log(projects);
 
     return (
@@ -12,11 +12,6 @@ const PortfolioIntro = (props) => {
         </div>
     )
 }
-const mapStateToProps = (state) => {
-    console.log(state);
-    return {
-        projects: state.projects
-    }
-}
 
-export default connect(mapStateToProps, null)(PortfolioIntro)
+
+export default PortfolioIntro

@@ -3,13 +3,18 @@
 .bio {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 50px 0;
     width: 100%;
     background-color: $theme-primary;
     gap: 25px;
     @include mobile {
-        flex-direction: column-reverse;
         padding: 25px;
+        flex-direction: column-reverse;
+    }
+    @include tablet {
+        margin: 0 auto;
+        flex-direction: column-reverse;
     }
     .hero_data {
         display: flex;
@@ -108,7 +113,6 @@
         @include tablet {}
         img {
             width: 100%;
-            object-fit: cover;
         }
     }
 }
