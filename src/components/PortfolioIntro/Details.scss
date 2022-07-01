@@ -5,9 +5,6 @@
     .project-details {
         width: 60%;
         .title {
-            display: flex;
-            align-items: center;
-            gap: 10px;
             .anticon {
                 color: #391400;
             }
@@ -30,7 +27,20 @@
         }
         .project-info {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
+            max-width: 570px;
+            .info_data {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                .title {
+                    text-align: center;
+                    color: $theme-secondary;
+                }
+                .category {
+                    .lists {}
+                }
+            }
         }
     }
 }

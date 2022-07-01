@@ -2,12 +2,11 @@ import React from "react";
 import AppRouter from "./AppRouter";
 
 // Styles
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'antd/dist/antd.css';
-import 'antd/dist/antd.less';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 // eslint-disable-next-line
 import "swiper/css/bundle";
 import "./styles/App.scss";
+import 'antd/dist/antd.min.css' //ANTD
 // Navigation Page
 
 const App = () => {

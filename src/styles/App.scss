@@ -4,8 +4,6 @@
 @import "../styles/variables/mixins";
 @import "../styles/xtras";
 // theme styles files
-@import "~bootstrap/scss/bootstrap";
-@import "~antd/dist/antd.css"; //antd css
 // custom css
 * {
     font-family: "Raleway", sans-serif;
@@ -113,6 +111,10 @@ body {
 .container {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+li {
+    list-style: none;
 }
 
 a {
