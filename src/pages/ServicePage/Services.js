@@ -8,7 +8,7 @@ import SectionIntro from "../../components/SectionIntro/SectionIntro";
 import HowWork from "../../components/howWork/HowWork";
 import ContactHero from "../../components/contactHeroposter/ContactHero";
 import InfoPage from "./InfoPage";
-import { connect, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 // Controls the text in the accordian
 const { Panel } = Collapse;
@@ -55,7 +55,7 @@ const Services = () => {
               </Panel>
               <Panel header="Development" key="2">
                 <InfoPage title="Agency is a business you hire to outsource your digital marketing efforts" description="Business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you." subject_title1="Web Development" subject_title2="Brand Strategy" subject_title3="Art Direction" />
-             
+
               </Panel>
               <Panel header="Marketing" key="3">
                 <InfoPage title="Agency is a business you hire to outsource your digital marketing efforts" description="Business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you." subject_title1="Web Development" subject_title2="Brand Strategy" subject_title3="Art Direction" />

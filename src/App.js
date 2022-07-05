@@ -1,8 +1,7 @@
 import React from "react";
 import AppRouter from "./AppRouter";
-
 // Styles
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 // eslint-disable-next-line
 import "swiper/css/bundle";
 import "./styles/App.scss";

@@ -88,7 +88,7 @@ const OurTeam = () => {
     cellAlign: "center",
     pageDots: true,
     prevNextButtons: false,
-    autoPlay: true,
+    // autoPlay: true,
   };
 
   return (

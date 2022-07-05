@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../../../assets/logos/logo.png";
 import { HiMenuAlt2, HiX } from "react-icons/hi"
-import 'animate.css';
 
 //Styles
 import "./style.scss";

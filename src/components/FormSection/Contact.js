@@ -13,9 +13,6 @@ const Contact = () => {
   };
   // State for input Values
   const [formValues, setFormValues] = useState(initialValues);
-  const [error, setError] = useState();
-  const [isSubmit, setIsSubmit] = useState(false);
-
   // Editable inputs
   const handleInputValues = (e) => {
     console.log(e.target.value);
@@ -30,45 +27,8 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    setError(validate(formValues));
-    setIsSubmit(true)
   };
 
-
-  // useEffect(()=>{
-  //   console.log(error);
-
-  //   if (Object.keys(error).length === 0 && isSubmit) {
-  //     console.log(formValues);
-      
-  //   }
-
-
-
-  // },[error])
-
-  // Validate values in form
-  const validate = (values) => {
-    const errors = {};
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (!values.firstName) {
-      errors.firstName = "**First Name is required**";
-    }
-    if (!values.lastName) {
-      errors.lastName = "**Last Name is required**";
-    }
-    if (!values.email) {
-      errors.email = "**Email is required**";
-    }
-    if (!values.mobile) {
-      errors.mobile = "**Mobile required**";
-    }
-    if (!values.msg) {
-      errors.msg = "**Msg is required**";
-    }
-    return errors;
-  };
 
   return (
     <div className="contact_form">
