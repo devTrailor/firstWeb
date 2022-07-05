@@ -1,40 +1,72 @@
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-// import React, { useState } from "react";
-// import { Modal, Button } from "antd";
-import { Container, Nav, Navbar } from "react-bootstrap";
-
 import Logo from "../../../assets/logos/logo.png";
+import { HiMenuAlt2, HiX } from "react-icons/hi"
+import 'animate.css';
 
 //Styles
-// import "antd/dist/antd.css";
 import "./style.scss";
-
+// links lists
+const links = [
+  {
+    page: "About",
+    path: "/"
+  },
+  {
+    page: "Services",
+    path: "/services"
+  },
+  {
+    page: "Portfolio",
+    path: "/portfolio"
+  },
+  {
+    page: "Blogs",
+    path: "/blogs"
+  },
+  {
+    page: "Contact Us",
+    path: "/contact-us"
+  },
+]
 const Navigation = () => {
+  // Hem Menu toggle
+  const [toggle, setToggle] = useState(false)
+  // For links active or not
+  const [active, setActive] = useState(true)
   return (
-    <>
-      <Navbar expand="lg">
-        <Container>
-          <Link to="/">
-            <img src={Logo} alt="Loading..." />
-          </Link>
-          <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
-            <Nav
-              navbarScroll
-              right
-            >
-              <NavLink to="/" activeclassname="active">About</NavLink>
-              <NavLink to="/services" activeclassname="active">Services</NavLink>
-              <NavLink to="/portfolio" activeclassname="active">Portfolio</NavLink>
-              <NavLink to="/blogs" activeclassname="active">Blogs</NavLink>
-              <NavLink to="/contact-us" activeclassname="active">Contact Us</NavLink>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </>
+    <nav className='app__navbar container'>
+      <div className='app__navbar-logo'>
+        <Link to="/">
+          <img src={Logo} alt="Logo...." />
+        </Link>
+      </div>
+      <ul className='app__navbar-links'>
+        {links.map((item) => {
+          return (
+            <li key={item} className={!active ? "active" : ""}>
+              <NavLink to={item.path} className={!active ? "active" : ""}>{item.page}</NavLink>
+            </li>
+          )
+        })}
+      </ul>
+      <div className="app_navbar-menu">
+        <HiMenuAlt2 onClick={() => { setToggle(!toggle) }} />
+        <div className={`sidebar ${toggle ? "active" : ""}`}>
+          <HiX onClick={() => { setToggle(false) }} />
+          <ul>
+            {links.map((item) => {
+              return (
+                <li key={item}>
+                  <NavLink to={item.path} className={!active ? "active" : ""} onClick={() => { setToggle(false) }}>{item.page}</NavLink>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 };
 
 export default Navigation;
-
