@@ -21,46 +21,6 @@
             font-size: 16px;
         }
     }
-    .ant-tabs {
-        .ant-tabs-tab {
-            font-size: 16px;
-            font-weight: 100;
-            color: gray;
-            &:hover {
-                color: $white;
-            }
-        }
-        .ant-tabs-ink-bar {
-            height: 2px;
-            background-color: $theme-secondary;
-        }
-        .ant-tabs-tab-active {
-            .ant-tabs-tab-btn {
-                color: $white;
-            }
-        }
-        .ant-tabs-tab-btn:focus,
-        .ant-tabs-tab-remove:focus,
-        .ant-tabs-tab-btn:active,
-        .ant-tabs-tab-remove:active {
-            color: $white;
-        }
-        .ant-tabs-nav-wrap {
-            justify-content: center;
-        }
-        .ant-tabs-nav-list {
-            gap: 30px;
-        }
-        .ant-tabs-nav {
-            &::before {
-                border-bottom: none;
-            }
-        }
-        .ant-tabs-content-holder {
-            background-color: $theme-primary;
-            // height: 1000px;
-        }
-    }
     .card-container {
         display: flex;
         flex-wrap: wrap;
@@ -71,5 +31,19 @@
         .portfolio-card {
             cursor: pointer;
         }
+    }
+}
+
+.btn_group {
+    button {
+        margin: 0 20px;
+        padding: 5px 20px;
+    }
+}
+
+.portfolio_container {
+    flex-wrap: wrap;
+    .portfolio-card {
+        cursor: pointer;
     }
 }

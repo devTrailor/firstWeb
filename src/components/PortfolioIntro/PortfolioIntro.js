@@ -7,7 +7,7 @@ const PortfolioIntro = () => {
     console.log(projects);
 
     return (
-        <div>
+        <div className='portfolio_intro'>
             <PortfolioLists projects={projects} />
         </div>
     )

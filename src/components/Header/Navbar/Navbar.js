@@ -43,7 +43,7 @@ const Navigation = () => {
       <ul className='app__navbar-links'>
         {links.map((item) => {
           return (
-            <li key={item} className={!active ? "active" : ""}>
+            <li key={item.page} className={!active ? "active" : ""}>
               <NavLink to={item.path} className={!active ? "active" : ""}>{item.page}</NavLink>
             </li>
           )
@@ -56,7 +56,7 @@ const Navigation = () => {
           <ul>
             {links.map((item) => {
               return (
-                <li key={item}>
+                <li key={item.page}>
                   <NavLink to={item.path} className={!active ? "active" : ""} onClick={() => { setToggle(false) }}>{item.page}</NavLink>
                 </li>
               )

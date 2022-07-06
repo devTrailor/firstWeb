@@ -7,7 +7,6 @@ import Footer from "./components/Footer/Footer";
 import Contact from "./components/FormSection/Contact";
 import Header from "./components/Header/Header";
 import PortfolioDetails from "./components/PortfolioIntro/PortfolioDetails";
-// import PortfolioIntro from "./components/PortfolioIntro/PortfolioIntro";
 
 // Pages
 import About from "./pages/AboutPage/About";

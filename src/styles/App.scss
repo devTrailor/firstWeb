@@ -122,6 +122,12 @@ a {
     text-decoration: none;
 }
 
+.app__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 // global csss
 .footer-section {
     background-color: $theme-light-yellow;
