@@ -1,7 +1,5 @@
-import React from 'react'
-
+import React, { useState } from 'react'
 import { Link } from "react-router-dom"
-import { useState } from 'react';
 import PortfolioCard from '../PortfolioProjectCard/PortfolioCard';
 // styles
 import "./style.scss"
@@ -15,28 +13,29 @@ const PortfolioLists = (props) => {
 
     // filter Cards
 
-    const filterCards = (category) => {
-        const updatedList = menu.filter((elm) => {
-            return elm.category === category
-        })
-        setMenu(updatedList)
 
+    const filterItem = (catgItem) => {
+        const updatedLists = projects.filter((elm) => {
+            return elm.category === catgItem
+        })
+        console.log(updatedLists);
+        setMenu(updatedLists)
     }
     return (
         <div className="container portfolio-intro">
             <h5 className="title2">PORTFOLIO</h5>
             <h1 className="title1">Latest Work</h1>
             <div className="btn_group app__flex">
-                <button onClick={() => setMenu(menu)}>All</button>
-                <button onClick={() => filterCards("web")}>Web</button>
-                <button onClick={() => filterCards("react")}>React</button>
-                <button onClick={() => filterCards("javascript")}>Javascript</button>
-                <button onClick={() => filterCards("css")}>HTML/CSS</button>
+                <button onClick={() => setMenu(projects)}>All</button>
+                <button onClick={() => filterItem("pics")}>Pics</button>
+                <button onClick={() => filterItem("photo")}>Photos</button>
+                <button onClick={() => filterItem("illustrate")}>Illustrate</button>
+                <button onClick={() => filterItem("design")}>Design</button>
             </div>
             <div className="portfolio_container app__flex">
-                {menu.map((item) => {
+                {menu && menu.map((item) => {
                     return (
-                        <Link to={"/project/" + item.id}>
+                        <Link to={"/project/" + item.id} key={item.id}>
                             <PortfolioCard img_url={item.img_url} title={item.title} />
                         </Link>
                     )
