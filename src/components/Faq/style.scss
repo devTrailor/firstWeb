@@ -12,8 +12,13 @@
         display: flex;
         width: 100%;
         justify-content: center;
-        flex-wrap: wrap;
         gap: 145px;
+        @include mobile {
+            flex-direction: column;
+        }
+        @include tablet {
+            flex-direction: column;
+        }
         .faq_info {
             .title2 {
                 max-width: 316px;
@@ -61,6 +66,12 @@
                 }
                 .ant-collapse-content-box {
                     max-width: 470px;
+                    @include mobile {
+                        max-width: 100%;
+                    }
+                    @include tablet {
+                        max-width: 100%;
+                    }
                 }
                 .description {
                     color: #391400;

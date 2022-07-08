@@ -1,14 +1,21 @@
-import React from 'react'
-import {Link } from 'react-router-dom'
+import React from 'react';
+import { Link, useParams } from 'react-router-dom'
 import { ArrowLeftOutlined } from '@ant-design/icons';
 // styles
 import "./Details.scss"
+import { useSelector } from 'react-redux';
 
 const PortfolioDetails = (props) => {
+  const projects = useSelector((state) => state.projects)
+  console.log(projects);
+  const id = useParams()
+  // const { title } = projects[id];
+  
+
   return (
     <div className='project-datails-section'>
       <div className="project-details container">
-        <h6 className="title"><ArrowLeftOutlined /><Link to="/" className='back-link'>BACK TO PORTFOLIO</Link></h6>
+        <h6 className="title app__flex"><ArrowLeftOutlined /><Link to="/" className='back-link'>BACK TO PORTFOLIO</Link></h6>
         <h1 className="title1">ghghdhg</h1>
         <h5 className="sub-title title">Agency provides a full service range including technical skills, design, business understanding.</h5>
         <p className="description">Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.</p>

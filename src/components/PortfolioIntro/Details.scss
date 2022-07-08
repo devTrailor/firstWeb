@@ -5,6 +5,9 @@
     .project-details {
         width: 60%;
         .title {
+            justify-content: flex-start;
+            gap: 30px;
+            font-size: 20px;
             .anticon {
                 color: #391400;
             }

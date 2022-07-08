@@ -15,6 +15,7 @@
             justify-content: space-around;
             background-color: $theme-light-yellow;
             border-bottom: 1px solid #F3D1BF;
+            flex-wrap: wrap;
             .blog-card {
                 width: 570px;
                 .card-body {

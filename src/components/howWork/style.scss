@@ -4,14 +4,16 @@
     display: flex;
     gap: 150px;
     border-bottom: 1px solid #f3d1bf;
-    flex-wrap: wrap;
     justify-content: space-between;
     padding: 90px 0;
     @include mobile {
         justify-content: center;
+        flex-direction: column;
+    }
+    @include tablet {
+        flex-direction: column;
     }
     .projects {
-        max-width: 500px;
         .title2 {
             font-size: 16px;
             font-weight: 100;
@@ -24,10 +26,15 @@
         .title1 {
             font-size: 72px;
             font-weight: 400;
+            max-width: 500px;
             color: #391400;
             @include mobile {
                 font-size: 40px;
                 width: 100%;
+            }
+            @include tablet {
+                flex-direction: column;
+                max-width: 100%;
             }
         }
         .description {

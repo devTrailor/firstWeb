@@ -1,4 +1,3 @@
-import { Button } from 'antd'
 import React from 'react'
 import { Link } from 'react-router-dom'
 // styles
@@ -11,9 +10,9 @@ const ContactHero = (props) => {
                 <h3 className="title">{props.title}</h3>
                 <p className="description">{props.para}</p>
                 <div className="contact_btn">
-                    <Button>
+                    <button>
                         <Link to= {props.path}>{props.btn_name}</Link>
-                    </Button>
+                    </button>
                 </div>
             </div>
             <div className="poster">

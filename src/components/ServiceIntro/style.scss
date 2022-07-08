@@ -4,10 +4,10 @@
     display: flex;
     justify-content: center;
     padding: 60px 0;
-    // flex-wrap: wrap;
-    gap: 220px;
+    margin: 0 auto;
     @include mobile {
         gap: 20px;
+        flex-direction: column;
     }
     .thumb {
         width: 70%;

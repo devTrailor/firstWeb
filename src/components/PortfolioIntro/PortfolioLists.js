@@ -15,7 +15,7 @@ const PortfolioLists = (props) => {
 
 
     const filterItem = (catgItem) => {
-        const updatedLists = projects.filter((elm) => {
+        const updatedLists = projects.filter((elm) => { // Access main API...
             return elm.category === catgItem
         })
         console.log(updatedLists);

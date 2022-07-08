@@ -35,6 +35,11 @@
         flex-wrap: wrap;
         @include mobile {
             margin-top: 50px;
+            justify-content: center;
+        }
+        @include tablet {
+            margin-top: 50px;
+            justify-content: center;
         }
         .card {
             padding: 40px;
