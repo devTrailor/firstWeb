@@ -26,7 +26,7 @@ const PortfolioLists = (props) => {
             <h5 className="title2">PORTFOLIO</h5>
             <h1 className="title1">Latest Work</h1>
             <div className="btn_group app__flex">
-                <button onClick={() => setMenu(projects)}>All</button>
+                <button className='active' onClick={() => setMenu(projects)}>All</button>
                 <button onClick={() => filterItem("pics")}>Pics</button>
                 <button onClick={() => filterItem("photo")}>Photos</button>
                 <button onClick={() => filterItem("illustrate")}>Illustrate</button>
